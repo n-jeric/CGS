@@ -37,6 +37,17 @@ namespace CGS_Struct
             public char status;
         }
         #endregion
+
+        #region Array & Index
+        static Curator[] myCurators = new Curator[10];
+        static Artist[] myArtists = new Artist[10];
+        static ArtPiece[] myArtPieces = new ArtPiece[10];
+
+        static int index_curator = 0;
+        static int index_artist = 0;
+        static int index_ArtPiece = 0;
+        #endregion
+
         static void Main(string[] args)
         {
            
