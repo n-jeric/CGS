@@ -251,8 +251,55 @@ namespace CGS_Struct
                 Console.WriteLine($"\nArtPiece #{i + 1}:\nArtPieceID: {myArtPieces[i].artpieceID}\nArtistID: {myArtPieces[i].artistID}\nCuratorID: {myArtPieces[i].curatorID}\nTitle: {myArtPieces[i].title}\nYear: {myArtPieces[i].year}\nValue: {myArtPieces[i].value}\nPrice: {myArtPieces[i].estimate}\nStatus: {myArtPieces[i].status}");
             }
         }
-
         #endregion
+
+        static void CuratorCommission(string curID, double price, double value)
+        {
+            for (int i = 0; i < myCurators.Length; i++)
+            {
+                if (myCurators[i].curatorID == curID)
+                {
+                    myCurators[i].commision = (price - value) * 0.10;
+                }
+            }
+        }
+        static void SellPiece()
+        {
+            Console.Write("Please enter artpieceID: ");
+            string artpieceId = Console.ReadLine();
+
+            for (int i = 0; i < index_ArtPiece; i++)
+            {
+                if (myArtPieces[i].artpieceID == artpieceId)
+                {
+                    if (myArtPieces[i].status == 'S')
+                    {
+                        Console.WriteLine("Error. This artpiece is sold");
+                    }
+                    else
+                    {
+                        Console.Write("Please enter the estimate (sale price)");
+                        double price = Convert.ToDouble(Console.ReadLine());
+
+                        double value = myArtPieces[i].value;
+
+                        if (price < value)
+                        {
+                            Console.WriteLine("Error! The entered price is below the value of the artpiece.");
+                        }
+                        else
+                        {
+                            myArtPieces[i].status = 'S';
+                            myArtPieces[i].estimate = price;
+
+                            string curID = myArtPieces[i].curatorID;
+                            CuratorCommission(curID, price, value);
+                            Console.WriteLine("Success! Item has been sold");
+                        }
+                    }
+                }
+            }
+        }
 
         static void Main(string[] args)
         {
