@@ -124,7 +124,7 @@ namespace CGS_Struct
                             myCurators[index_curator].commision = 0.0;
                             index_curator++;
                             Console.WriteLine("Success! Curator added");
-                            Console.WriteLine("==========================");
+                            Console.WriteLine("==========================\n");
                         }
                     }
                 }
@@ -167,7 +167,7 @@ namespace CGS_Struct
                             myArtists[index_artist].p0.fName = firstName;
                             index_artist++;
                             Console.WriteLine("Success! Artist added");
-                            Console.WriteLine("==========================");
+                            Console.WriteLine("==========================\n");
                         }
                     }
                 }
@@ -221,7 +221,7 @@ namespace CGS_Struct
                             myArtPieces[index_ArtPiece].value = value;
                             myArtPieces[index_ArtPiece].status = 'D';
                             index_ArtPiece++;
-                            Console.WriteLine("Artpiece has been successfully added.");
+                            Console.WriteLine("Artpiece has been successfully added.\n");
                         }
                     }
                 }
@@ -300,10 +300,63 @@ namespace CGS_Struct
                 }
             }
         }
+        static void Menu()
+        {
+            char ans = '0';
+
+            do
+            {
+                Console.WriteLine("\n==========Menu=========");
+                Console.WriteLine("[1] - Add Curator");
+                Console.WriteLine("[2] - Add Artist");
+                Console.WriteLine("[3] - Art Piece");
+                Console.WriteLine("[4] - Display Curators");
+                Console.WriteLine("[5] - Display Artists");
+                Console.WriteLine("[6] - Display Art Pieces");
+                Console.WriteLine("[7] - Sell Art Piece");
+                Console.WriteLine("[0] - Exit");
+
+                Console.Write("Please enter your choice: ");
+                ans = Convert.ToChar(Console.ReadLine());
+                Console.WriteLine();
+
+                switch (ans)
+                {
+                    case '1':
+                        AddCurator();
+                        break;
+                    case '2':
+                        AddArtist();
+                        break;
+                    case '3':
+                        AddArtPiece();
+                        break;
+                    case '4':
+                        ListCurators();
+                        break;
+                    case '5':
+                        ListArtists();
+                        break;
+                    case '6':
+                        ListArtPieces();
+                        break;
+                    case '7':
+                        SellPiece();
+                        break;
+                    case '0':
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        Console.WriteLine("Incorrect entry. Please try again.");
+                        break;
+                }
+
+            } while (ans != '0');
+        }
 
         static void Main(string[] args)
         {
-           
+            Menu();
         }
     }
 }
