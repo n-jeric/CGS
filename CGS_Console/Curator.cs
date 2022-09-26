@@ -12,12 +12,12 @@ namespace CGS_Console
         public string CuratorID { get; set; }
         public double Commission { get; set;}
 
-        public Curator(string firstName, string lastName, string curatorID) : base(firstName, lastName)
+        public Curator(string curatorID, string firstName, string lastName) : base(firstName, lastName)
         {
             CuratorID = curatorID;
             Commission = 0.0;
         }
-        public Curator(string firstName, string lastName, string curatorID, string comm) : base(firstName, lastName)
+        public Curator(string curatorID, string firstName, string lastName, string comm) : base(firstName, lastName)
         {
             CuratorID = curatorID;
             Commission = double.Parse(comm);
@@ -25,7 +25,7 @@ namespace CGS_Console
 
         public override string toString()
         {
-            return $"{base.toString()} {CuratorID} {Commission}\n====================\n";
+            return $"{CuratorID} {base.toString()} {Commission}\n====================\n";
         }
         public string GetID()
         {
