@@ -14,7 +14,8 @@ namespace CGS_Console
 
         public Gallery() { }
 
-        public bool CuratorVerifier(string cID)
+        #region Add
+        private bool CuratorVerifier(string cID)
         {
             foreach (Curator cur in myCurators)
             {
@@ -50,7 +51,6 @@ namespace CGS_Console
             myCurators.AddCurator(new Curator(curatorID, firstName, lastName));
             return $"Success! Curator {curatorID} added to the list";
         }
-
         public bool ArtistVarifier(string aID)
         {
             foreach (Artist art in myArtists)
@@ -62,7 +62,7 @@ namespace CGS_Console
             }
             return false;
         }
-        public string AddArtists()
+        private string AddArtists()
         {
             Console.WriteLine("Please enter ArtistID:");
             string artistID = Console.ReadLine();
@@ -88,6 +88,54 @@ namespace CGS_Console
             myArtists.AddArtist(new Artist(artistID, firstName, lastName));
             return $"Success! Artist {artistID} added to the list";
         }
+        private bool ArtPieceVarifier(string apID)
+        {
+            foreach (ArtPiece artP in myArtPieces)
+            {
+                if (artP.GetID() == apID)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        public string AddPiece()
+        {
+            Console.WriteLine("Please enter ArtPieceID:");
+            string artPieceID = Console.ReadLine();
+            if (artPieceID.Length != 5)
+            {
+                return "Error. ArtPieceID should be 5 characters";
+            }
+            if (ArtPieceVarifier(artPieceID) == true)
+            {
+                return "Error. This ID already exits";
+            }
+            Console.WriteLine("Please enter title:");
+            string title = Console.ReadLine();
+
+            Console.WriteLine("Please enter year:");
+            int year = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter value:");
+            double value = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Please enter ArtistID:");
+            string artistID = Console.ReadLine();
+            if (ArtistVarifier(artistID) == false)
+            {
+                return "Error. This ID does not exits";
+            }
+            Console.WriteLine("Please enter CuratorID:");
+            string curatorID = Console.ReadLine();
+            if (CuratorVerifier(curatorID) == false)
+            {
+                return "Error. This ID does not exits";
+            }
+            myArtPieces.AddPiece(new ArtPiece(artPieceID, title, year, value, artistID, curatorID));
+            return $"Success! ArtPiece {artPieceID}: {title} added to the gallery";
+        }
+        #endregion
 
 
 
