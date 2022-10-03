@@ -21,7 +21,7 @@ namespace CGS_Console
         }
         public override string toString()
         {
-            return $"{ArtistID} {base.toString()}\n====================\n";
+            return $"{ArtistID} {base.toString()}";
         }
     }
 }

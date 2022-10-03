@@ -25,7 +25,7 @@ namespace CGS_Console
 
         public override string toString()
         {
-            return $"{CuratorID} {base.toString()} {Commission}\n====================\n";
+            return $"{CuratorID} {base.toString()} {Commission}";
         }
         public string GetID()
         {

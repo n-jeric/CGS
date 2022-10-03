@@ -34,7 +34,7 @@ namespace CGS_Console
 
         public string toString()
         {
-            return $"\npieceID: {PieceID}\nTitle: {Title}\nYear: {Year}\nPrice: {Value.ToString()} \nEstimate: {Estimate.ToString()} \nArtistID: {this.artistID} \nCurrtorID: {this.curatorID} \nStatus: {this.status}\n========================\n";
+            return $"\n\tPieceID: {PieceID}\n\tTitle: {Title}\n\tYear: {Year}\n\tPrice: {Value.ToString("N2")} \n\tEstimate: {Estimate.ToString("N2")} \n\tArtistID: {this.artistID} \n\tCurrtorID: {this.curatorID} \n\tStatus: {this.status}\n========================\n";
         }
         public string GetID()
         {

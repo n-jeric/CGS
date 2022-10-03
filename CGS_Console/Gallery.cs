@@ -140,6 +140,7 @@ namespace CGS_Console
         #region List
         public void ListCurators()
         {
+            Console.WriteLine("Curators:\n");
             for (int i = 0; i < myCurators.Count; i++)
             {
                 Console.WriteLine($"Curator #{i + 1}: {myCurators[i].toString()}");
@@ -147,6 +148,7 @@ namespace CGS_Console
         }
         public void ListArtists()
         {
+            Console.WriteLine("Artists:\n");
             for (int i = 0; i < myArtists.Count; i++)
             {
                 Console.WriteLine($"Artist #{i + 1}: {myArtists[i].toString()}");
@@ -154,6 +156,7 @@ namespace CGS_Console
         }
         public void ListPieces()
         {
+            Console.WriteLine("ArtPieces:\n");
             for (int i = 0; i < myArtPieces.Count; i++)
             {
                 Console.WriteLine($"Art Piece #{i + 1}: {myArtPieces[i].toString()}");
