@@ -10,6 +10,11 @@ namespace CGS_Console
     {
         static void Main(string[] args)
         {
+            Gallery gallery = new Gallery();
+
+
+
+            Console.ReadKey();
         }
     }
 }

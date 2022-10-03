@@ -161,5 +161,75 @@ namespace CGS_Console
         }
         #endregion
 
+        public string SellPiece()
+        {
+            Console.WriteLine("Enter ID of ArtPiece being sold:");
+            string pieceID = Console.ReadLine();
+
+            if (ArtPieceVarifier(pieceID) == false)
+            {
+                return "Error. This ID does not exits";
+            }
+            
+            foreach (ArtPiece ap in myArtPieces)
+            {
+                if (ap.GetID() == pieceID)
+                {
+                    //check status
+                    if (ap.Status == Status.S)
+                    {
+                       return "Error. This piece is already sold";
+                    }
+                    Console.WriteLine("Enter sale price of ArtPiece");
+                    double price = Convert.ToDouble(Console.ReadLine());
+
+                    if (price <= ap.Value)
+                    {
+                        return"Error. Sale price is less than ArtPiece value.";
+                    }
+                    CuratorCommision(ap, price);
+                }
+            }
+            return $"ArtPiece {pieceID} sold";
+        }
+        //method extracts the Curator ID assigned to the art piece using the Curator method GetID,
+        //calls the ArtPiece’s ChangeStatus, PricePaid and CalculateComm methods and curator SetComm
+        public void CuratorCommision(ArtPiece artPiece, double price)
+        {
+            foreach (Curator cur in myCurators)
+            {
+                if (cur.GetID() == artPiece.CuratorID)
+                {
+                    artPiece.ChangeStatus(Status.S);
+                    artPiece.PriceSale(price);
+
+                    cur.SetComm(artPiece.CalculateCommission(price));
+                }
+            }
+        }
+
+        public void ChageStat()
+        {
+            Console.WriteLine("Enter ID of ArtPiece to change status:");
+            string pieceID = Console.ReadLine();
+
+            foreach (ArtPiece ap in myArtPieces)
+            {
+                if (ap.GetID() == pieceID)
+                {
+                    Console.WriteLine("Enter status:");
+
+                    if(Enum.TryParse(Console.ReadLine(), out Status status))
+                    {
+                        ap.ChangeStatus(status);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Incorrect status");
+                    }
+                }
+            }
+        }
+
     }
 }
