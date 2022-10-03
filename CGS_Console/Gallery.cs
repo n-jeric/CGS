@@ -51,7 +51,7 @@ namespace CGS_Console
             myCurators.AddCurator(new Curator(curatorID, firstName, lastName));
             return $"Success! Curator {curatorID} added to the list";
         }
-        public bool ArtistVarifier(string aID)
+        private bool ArtistVarifier(string aID)
         {
             foreach (Artist art in myArtists)
             {
@@ -62,7 +62,7 @@ namespace CGS_Console
             }
             return false;
         }
-        private string AddArtists()
+        public string AddArtist()
         {
             Console.WriteLine("Please enter ArtistID:");
             string artistID = Console.ReadLine();
@@ -133,11 +133,33 @@ namespace CGS_Console
                 return "Error. This ID does not exits";
             }
             myArtPieces.AddPiece(new ArtPiece(artPieceID, title, year, value, artistID, curatorID));
-            return $"Success! ArtPiece {artPieceID}: {title} added to the gallery";
+            return $"Success! ArtPiece {artPieceID}: {title} added to inventory";
         }
         #endregion
 
-
+        #region List
+        public void ListCurators()
+        {
+            for (int i = 0; i < myCurators.Count; i++)
+            {
+                Console.WriteLine($"Curator #{i + 1}: {myCurators[i].toString()}");
+            }
+        }
+        public void ListArtists()
+        {
+            for (int i = 0; i < myArtists.Count; i++)
+            {
+                Console.WriteLine($"Artist #{i + 1}: {myArtists[i].toString()}");
+            }
+        }
+        public void ListPieces()
+        {
+            for (int i = 0; i < myArtPieces.Count; i++)
+            {
+                Console.WriteLine($"Art Piece #{i + 1}: {myArtPieces[i].toString()}");
+            }
+        }
+        #endregion
 
     }
 }
