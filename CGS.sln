@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGS_Struct", "CGS_Struct\CG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGS_Console", "CGS_Console\CGS_Console.csproj", "{C190BC21-5DAD-4AC8-8E30-6FF0A0FFFEEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGS_WinLibrary", "CGS_WinLibrary\CGS_WinLibrary.csproj", "{BA53B946-A2C9-4D96-B098-9BF86BAA4214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGS_WinForm", "CGS_WinForm\CGS_WinForm.csproj", "{A3AD2451-4DFB-4B67-A6F6-3138B3B81190}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{C190BC21-5DAD-4AC8-8E30-6FF0A0FFFEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C190BC21-5DAD-4AC8-8E30-6FF0A0FFFEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C190BC21-5DAD-4AC8-8E30-6FF0A0FFFEEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA53B946-A2C9-4D96-B098-9BF86BAA4214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA53B946-A2C9-4D96-B098-9BF86BAA4214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA53B946-A2C9-4D96-B098-9BF86BAA4214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA53B946-A2C9-4D96-B098-9BF86BAA4214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3AD2451-4DFB-4B67-A6F6-3138B3B81190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3AD2451-4DFB-4B67-A6F6-3138B3B81190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3AD2451-4DFB-4B67-A6F6-3138B3B81190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3AD2451-4DFB-4B67-A6F6-3138B3B81190}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
