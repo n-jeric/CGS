@@ -56,11 +56,12 @@ namespace CGS_WinForm
         private void btnArtist_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            OpenChildForm(new FrmArtists());
         }
 
         private void btnAddArtists_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btnSellArtPieces_Click(object sender, EventArgs e)

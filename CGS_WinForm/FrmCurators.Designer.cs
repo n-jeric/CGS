@@ -31,9 +31,9 @@
             this.lblCurFName = new System.Windows.Forms.Label();
             this.lblCurLName = new System.Windows.Forms.Label();
             this.lblCurID = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCurFName = new System.Windows.Forms.TextBox();
+            this.txtCurLName = new System.Windows.Forms.TextBox();
+            this.txtCurID = new System.Windows.Forms.TextBox();
             this.rtbCurators = new System.Windows.Forms.RichTextBox();
             this.btnCurAdd = new System.Windows.Forms.Button();
             this.btnCurSave = new System.Windows.Forms.Button();
@@ -70,37 +70,37 @@
             this.lblCurID.TabIndex = 2;
             this.lblCurID.Text = "Curator ID";
             // 
-            // textBox1
+            // txtCurFName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(180, 74);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 26);
-            this.textBox1.TabIndex = 3;
+            this.txtCurFName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
+            this.txtCurFName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCurFName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurFName.Location = new System.Drawing.Point(180, 74);
+            this.txtCurFName.Name = "txtCurFName";
+            this.txtCurFName.Size = new System.Drawing.Size(155, 26);
+            this.txtCurFName.TabIndex = 3;
             // 
-            // textBox2
+            // txtCurLName
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(180, 130);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(155, 26);
-            this.textBox2.TabIndex = 4;
+            this.txtCurLName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
+            this.txtCurLName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCurLName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurLName.Location = new System.Drawing.Point(180, 130);
+            this.txtCurLName.Name = "txtCurLName";
+            this.txtCurLName.Size = new System.Drawing.Size(155, 26);
+            this.txtCurLName.TabIndex = 4;
             // 
-            // textBox3
+            // txtCurID
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBox3.Location = new System.Drawing.Point(180, 186);
-            this.textBox3.MaxLength = 5;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(155, 26);
-            this.textBox3.TabIndex = 5;
+            this.txtCurID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
+            this.txtCurID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCurID.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurID.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtCurID.Location = new System.Drawing.Point(180, 187);
+            this.txtCurID.MaxLength = 5;
+            this.txtCurID.Name = "txtCurID";
+            this.txtCurID.Size = new System.Drawing.Size(155, 26);
+            this.txtCurID.TabIndex = 5;
             // 
             // rtbCurators
             // 
@@ -165,9 +165,9 @@
             this.Controls.Add(this.btnCurSave);
             this.Controls.Add(this.btnCurAdd);
             this.Controls.Add(this.rtbCurators);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCurID);
+            this.Controls.Add(this.txtCurLName);
+            this.Controls.Add(this.txtCurFName);
             this.Controls.Add(this.lblCurID);
             this.Controls.Add(this.lblCurLName);
             this.Controls.Add(this.lblCurFName);
@@ -186,9 +186,9 @@
         private System.Windows.Forms.Label lblCurFName;
         private System.Windows.Forms.Label lblCurLName;
         private System.Windows.Forms.Label lblCurID;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCurFName;
+        private System.Windows.Forms.TextBox txtCurLName;
+        private System.Windows.Forms.TextBox txtCurID;
         private System.Windows.Forms.RichTextBox rtbCurators;
         private System.Windows.Forms.Button btnCurAdd;
         private System.Windows.Forms.Button btnCurSave;

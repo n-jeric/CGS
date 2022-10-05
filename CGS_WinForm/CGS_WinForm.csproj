@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmArtists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmArtists.Designer.cs">
+      <DependentUpon>FrmArtists.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCurators.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmArtists.resx">
+      <DependentUpon>FrmArtists.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCurators.resx">
       <DependentUpon>FrmCurators.cs</DependentUpon>
     </EmbeddedResource>
