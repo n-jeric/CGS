@@ -50,6 +50,7 @@ namespace CGS_WinForm
         private void btnCurator_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            OpenChildForm(new FrmCurators());
         }
 
         private void btnArtist_Click(object sender, EventArgs e)
