@@ -47,7 +47,7 @@
             this.btnArtistView.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnArtistView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnArtistView.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnArtistView.Location = new System.Drawing.Point(12, 409);
+            this.btnArtistView.Location = new System.Drawing.Point(12, 370);
             this.btnArtistView.Name = "btnArtistView";
             this.btnArtistView.Size = new System.Drawing.Size(115, 26);
             this.btnArtistView.TabIndex = 19;
@@ -60,7 +60,7 @@
             this.btnArtistSave.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnArtistSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnArtistSave.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnArtistSave.Location = new System.Drawing.Point(180, 280);
+            this.btnArtistSave.Location = new System.Drawing.Point(220, 265);
             this.btnArtistSave.Name = "btnArtistSave";
             this.btnArtistSave.Size = new System.Drawing.Size(115, 26);
             this.btnArtistSave.TabIndex = 18;
@@ -73,7 +73,7 @@
             this.btnArtistAdd.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnArtistAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnArtistAdd.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnArtistAdd.Location = new System.Drawing.Point(180, 238);
+            this.btnArtistAdd.Location = new System.Drawing.Point(220, 223);
             this.btnArtistAdd.Name = "btnArtistAdd";
             this.btnArtistAdd.Size = new System.Drawing.Size(115, 26);
             this.btnArtistAdd.TabIndex = 17;
@@ -87,9 +87,9 @@
             this.rtbArtists.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.rtbArtists.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbArtists.ForeColor = System.Drawing.Color.LightGray;
-            this.rtbArtists.Location = new System.Drawing.Point(0, 441);
+            this.rtbArtists.Location = new System.Drawing.Point(0, 402);
             this.rtbArtists.Name = "rtbArtists";
-            this.rtbArtists.Size = new System.Drawing.Size(725, 194);
+            this.rtbArtists.Size = new System.Drawing.Size(709, 194);
             this.rtbArtists.TabIndex = 16;
             this.rtbArtists.Text = "";
             // 
@@ -99,7 +99,7 @@
             this.txtArtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtArtID.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtArtID.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtArtID.Location = new System.Drawing.Point(180, 187);
+            this.txtArtID.Location = new System.Drawing.Point(180, 172);
             this.txtArtID.MaxLength = 5;
             this.txtArtID.Name = "txtArtID";
             this.txtArtID.Size = new System.Drawing.Size(155, 26);
@@ -110,7 +110,7 @@
             this.txtArtLName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
             this.txtArtLName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtArtLName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArtLName.Location = new System.Drawing.Point(180, 130);
+            this.txtArtLName.Location = new System.Drawing.Point(180, 115);
             this.txtArtLName.Name = "txtArtLName";
             this.txtArtLName.Size = new System.Drawing.Size(155, 26);
             this.txtArtLName.TabIndex = 14;
@@ -120,7 +120,7 @@
             this.txtArtFName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
             this.txtArtFName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtArtFName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArtFName.Location = new System.Drawing.Point(180, 74);
+            this.txtArtFName.Location = new System.Drawing.Point(180, 59);
             this.txtArtFName.Name = "txtArtFName";
             this.txtArtFName.Size = new System.Drawing.Size(155, 26);
             this.txtArtFName.TabIndex = 13;
@@ -129,7 +129,7 @@
             // 
             this.lblArtID.AutoSize = true;
             this.lblArtID.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArtID.Location = new System.Drawing.Point(57, 189);
+            this.lblArtID.Location = new System.Drawing.Point(57, 174);
             this.lblArtID.Name = "lblArtID";
             this.lblArtID.Size = new System.Drawing.Size(64, 20);
             this.lblArtID.TabIndex = 12;
@@ -139,7 +139,7 @@
             // 
             this.lblArtLName.AutoSize = true;
             this.lblArtLName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArtLName.Location = new System.Drawing.Point(57, 133);
+            this.lblArtLName.Location = new System.Drawing.Point(57, 118);
             this.lblArtLName.Name = "lblArtLName";
             this.lblArtLName.Size = new System.Drawing.Size(83, 20);
             this.lblArtLName.TabIndex = 11;
@@ -149,7 +149,7 @@
             // 
             this.lblArtFName.AutoSize = true;
             this.lblArtFName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArtFName.Location = new System.Drawing.Point(57, 77);
+            this.lblArtFName.Location = new System.Drawing.Point(57, 62);
             this.lblArtFName.Name = "lblArtFName";
             this.lblArtFName.Size = new System.Drawing.Size(81, 20);
             this.lblArtFName.TabIndex = 10;
@@ -160,7 +160,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
-            this.ClientSize = new System.Drawing.Size(725, 635);
+            this.ClientSize = new System.Drawing.Size(709, 596);
             this.Controls.Add(this.btnArtistView);
             this.Controls.Add(this.btnArtistSave);
             this.Controls.Add(this.btnArtistAdd);

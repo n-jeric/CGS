@@ -44,7 +44,7 @@
             // 
             this.lblCurFName.AutoSize = true;
             this.lblCurFName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurFName.Location = new System.Drawing.Point(57, 77);
+            this.lblCurFName.Location = new System.Drawing.Point(57, 62);
             this.lblCurFName.Name = "lblCurFName";
             this.lblCurFName.Size = new System.Drawing.Size(81, 20);
             this.lblCurFName.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             this.lblCurLName.AutoSize = true;
             this.lblCurLName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurLName.Location = new System.Drawing.Point(57, 133);
+            this.lblCurLName.Location = new System.Drawing.Point(57, 118);
             this.lblCurLName.Name = "lblCurLName";
             this.lblCurLName.Size = new System.Drawing.Size(83, 20);
             this.lblCurLName.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             this.lblCurID.AutoSize = true;
             this.lblCurID.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurID.Location = new System.Drawing.Point(57, 189);
+            this.lblCurID.Location = new System.Drawing.Point(57, 174);
             this.lblCurID.Name = "lblCurID";
             this.lblCurID.Size = new System.Drawing.Size(85, 20);
             this.lblCurID.TabIndex = 2;
@@ -75,7 +75,7 @@
             this.txtCurFName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
             this.txtCurFName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCurFName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurFName.Location = new System.Drawing.Point(180, 74);
+            this.txtCurFName.Location = new System.Drawing.Point(180, 59);
             this.txtCurFName.Name = "txtCurFName";
             this.txtCurFName.Size = new System.Drawing.Size(155, 26);
             this.txtCurFName.TabIndex = 3;
@@ -85,7 +85,7 @@
             this.txtCurLName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
             this.txtCurLName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCurLName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurLName.Location = new System.Drawing.Point(180, 130);
+            this.txtCurLName.Location = new System.Drawing.Point(180, 115);
             this.txtCurLName.Name = "txtCurLName";
             this.txtCurLName.Size = new System.Drawing.Size(155, 26);
             this.txtCurLName.TabIndex = 4;
@@ -96,7 +96,7 @@
             this.txtCurID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCurID.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCurID.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtCurID.Location = new System.Drawing.Point(180, 187);
+            this.txtCurID.Location = new System.Drawing.Point(180, 172);
             this.txtCurID.MaxLength = 5;
             this.txtCurID.Name = "txtCurID";
             this.txtCurID.Size = new System.Drawing.Size(155, 26);
@@ -109,9 +109,9 @@
             this.rtbCurators.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.rtbCurators.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbCurators.ForeColor = System.Drawing.Color.LightGray;
-            this.rtbCurators.Location = new System.Drawing.Point(0, 441);
+            this.rtbCurators.Location = new System.Drawing.Point(0, 402);
             this.rtbCurators.Name = "rtbCurators";
-            this.rtbCurators.Size = new System.Drawing.Size(725, 194);
+            this.rtbCurators.Size = new System.Drawing.Size(709, 194);
             this.rtbCurators.TabIndex = 6;
             this.rtbCurators.Text = "";
             // 
@@ -121,7 +121,7 @@
             this.btnCurAdd.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnCurAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCurAdd.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCurAdd.Location = new System.Drawing.Point(180, 238);
+            this.btnCurAdd.Location = new System.Drawing.Point(220, 223);
             this.btnCurAdd.Name = "btnCurAdd";
             this.btnCurAdd.Size = new System.Drawing.Size(115, 26);
             this.btnCurAdd.TabIndex = 7;
@@ -134,7 +134,7 @@
             this.btnCurSave.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnCurSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCurSave.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCurSave.Location = new System.Drawing.Point(180, 280);
+            this.btnCurSave.Location = new System.Drawing.Point(220, 265);
             this.btnCurSave.Name = "btnCurSave";
             this.btnCurSave.Size = new System.Drawing.Size(115, 26);
             this.btnCurSave.TabIndex = 8;
@@ -148,7 +148,7 @@
             this.btnCurView.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnCurView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCurView.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCurView.Location = new System.Drawing.Point(12, 409);
+            this.btnCurView.Location = new System.Drawing.Point(12, 370);
             this.btnCurView.Name = "btnCurView";
             this.btnCurView.Size = new System.Drawing.Size(115, 26);
             this.btnCurView.TabIndex = 9;
@@ -160,7 +160,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
-            this.ClientSize = new System.Drawing.Size(725, 635);
+            this.ClientSize = new System.Drawing.Size(709, 596);
             this.Controls.Add(this.btnCurView);
             this.Controls.Add(this.btnCurSave);
             this.Controls.Add(this.btnCurAdd);
