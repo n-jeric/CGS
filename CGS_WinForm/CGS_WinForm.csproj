@@ -67,6 +67,12 @@
     <Compile Include="FrmCurators.Designer.cs">
       <DependentUpon>FrmCurators.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSellArtPiece.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSellArtPiece.Designer.cs">
+      <DependentUpon>FrmSellArtPiece.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuGallery.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCurators.resx">
       <DependentUpon>FrmCurators.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSellArtPiece.resx">
+      <DependentUpon>FrmSellArtPiece.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuGallery.resx">
       <DependentUpon>MenuGallery.cs</DependentUpon>

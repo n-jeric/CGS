@@ -34,18 +34,18 @@
             this.btnArtist = new System.Windows.Forms.Button();
             this.btnArtPiece = new System.Windows.Forms.Button();
             this.pnlSubArtPiece = new System.Windows.Forms.Panel();
-            this.btnAddArtists = new System.Windows.Forms.Button();
+            this.btnAddArtPieces = new System.Windows.Forms.Button();
             this.btnSellArtPieces = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pnlChilForm = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlCenterLogo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlSideBar.SuspendLayout();
             this.pnlSubArtPiece.SuspendLayout();
             this.pnlChilForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlCenterLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSideBar
@@ -127,30 +127,30 @@
             // 
             this.pnlSubArtPiece.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.pnlSubArtPiece.Controls.Add(this.btnSellArtPieces);
-            this.pnlSubArtPiece.Controls.Add(this.btnAddArtists);
+            this.pnlSubArtPiece.Controls.Add(this.btnAddArtPieces);
             this.pnlSubArtPiece.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSubArtPiece.Location = new System.Drawing.Point(0, 250);
             this.pnlSubArtPiece.Name = "pnlSubArtPiece";
             this.pnlSubArtPiece.Size = new System.Drawing.Size(225, 81);
             this.pnlSubArtPiece.TabIndex = 4;
             // 
-            // btnAddArtists
+            // btnAddArtPieces
             // 
-            this.btnAddArtists.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(37)))), ((int)(((byte)(60)))));
-            this.btnAddArtists.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAddArtists.FlatAppearance.BorderSize = 0;
-            this.btnAddArtists.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RosyBrown;
-            this.btnAddArtists.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddArtists.ForeColor = System.Drawing.Color.LightGray;
-            this.btnAddArtists.Location = new System.Drawing.Point(0, 0);
-            this.btnAddArtists.Name = "btnAddArtists";
-            this.btnAddArtists.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnAddArtists.Size = new System.Drawing.Size(225, 40);
-            this.btnAddArtists.TabIndex = 0;
-            this.btnAddArtists.Text = "Add Art Piece";
-            this.btnAddArtists.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddArtists.UseVisualStyleBackColor = false;
-            this.btnAddArtists.Click += new System.EventHandler(this.btnAddArtists_Click);
+            this.btnAddArtPieces.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(37)))), ((int)(((byte)(60)))));
+            this.btnAddArtPieces.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddArtPieces.FlatAppearance.BorderSize = 0;
+            this.btnAddArtPieces.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RosyBrown;
+            this.btnAddArtPieces.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddArtPieces.ForeColor = System.Drawing.Color.LightGray;
+            this.btnAddArtPieces.Location = new System.Drawing.Point(0, 0);
+            this.btnAddArtPieces.Name = "btnAddArtPieces";
+            this.btnAddArtPieces.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnAddArtPieces.Size = new System.Drawing.Size(225, 40);
+            this.btnAddArtPieces.TabIndex = 0;
+            this.btnAddArtPieces.Text = "Add Art Piece";
+            this.btnAddArtPieces.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddArtPieces.UseVisualStyleBackColor = false;
+            this.btnAddArtPieces.Click += new System.EventHandler(this.btnAddArtPieces_Click);
             // 
             // btnSellArtPieces
             // 
@@ -196,17 +196,6 @@
             this.pnlChilForm.Size = new System.Drawing.Size(709, 596);
             this.pnlChilForm.TabIndex = 1;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::CGS_WinForm.Properties.Resources.CGSLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 132);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
@@ -228,6 +217,17 @@
             this.pnlCenterLogo.Size = new System.Drawing.Size(300, 158);
             this.pnlCenterLogo.TabIndex = 2;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::CGS_WinForm.Properties.Resources.CGSLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 132);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // MenuGallery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -244,9 +244,9 @@
             this.pnlSideBar.ResumeLayout(false);
             this.pnlSubArtPiece.ResumeLayout(false);
             this.pnlChilForm.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlCenterLogo.ResumeLayout(false);
             this.pnlCenterLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -256,7 +256,7 @@
         private System.Windows.Forms.Panel pnlSideBar;
         private System.Windows.Forms.Panel pnlSubArtPiece;
         private System.Windows.Forms.Button btnSellArtPieces;
-        private System.Windows.Forms.Button btnAddArtists;
+        private System.Windows.Forms.Button btnAddArtPieces;
         private System.Windows.Forms.Button btnArtPiece;
         private System.Windows.Forms.Button btnArtist;
         private System.Windows.Forms.Button btnCurator;

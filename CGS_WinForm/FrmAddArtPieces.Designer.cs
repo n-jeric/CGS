@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCurView = new System.Windows.Forms.Button();
-            this.btnCurAdd = new System.Windows.Forms.Button();
-            this.rtbCurators = new System.Windows.Forms.RichTextBox();
+            this.btnArtPieceView = new System.Windows.Forms.Button();
+            this.btnArtPieceAdd = new System.Windows.Forms.Button();
+            this.rtbArtPieces = new System.Windows.Forms.RichTextBox();
             this.txtArtPieceYear = new System.Windows.Forms.TextBox();
             this.txtArtPieceTitle = new System.Windows.Forms.TextBox();
             this.txtArtPieceID = new System.Windows.Forms.TextBox();
@@ -44,50 +44,50 @@
             this.txtArtPieceCurID = new System.Windows.Forms.TextBox();
             this.lblArtPieceCurID = new System.Windows.Forms.Label();
             this.gbStatus = new System.Windows.Forms.GroupBox();
-            this.rdBtnDisplay = new System.Windows.Forms.RadioButton();
             this.rdBtnStorage = new System.Windows.Forms.RadioButton();
+            this.rdBtnDisplay = new System.Windows.Forms.RadioButton();
             this.gbStatus.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnCurView
+            // btnArtPieceView
             // 
-            this.btnCurView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCurView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
-            this.btnCurView.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnCurView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCurView.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCurView.Location = new System.Drawing.Point(582, 370);
-            this.btnCurView.Name = "btnCurView";
-            this.btnCurView.Size = new System.Drawing.Size(115, 26);
-            this.btnCurView.TabIndex = 19;
-            this.btnCurView.Text = "View ArtPiece";
-            this.btnCurView.UseVisualStyleBackColor = false;
+            this.btnArtPieceView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnArtPieceView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
+            this.btnArtPieceView.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnArtPieceView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnArtPieceView.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnArtPieceView.Location = new System.Drawing.Point(582, 370);
+            this.btnArtPieceView.Name = "btnArtPieceView";
+            this.btnArtPieceView.Size = new System.Drawing.Size(115, 26);
+            this.btnArtPieceView.TabIndex = 19;
+            this.btnArtPieceView.Text = "View ArtPieces";
+            this.btnArtPieceView.UseVisualStyleBackColor = false;
             // 
-            // btnCurAdd
+            // btnArtPieceAdd
             // 
-            this.btnCurAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
-            this.btnCurAdd.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnCurAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCurAdd.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCurAdd.Location = new System.Drawing.Point(220, 318);
-            this.btnCurAdd.Name = "btnCurAdd";
-            this.btnCurAdd.Size = new System.Drawing.Size(115, 26);
-            this.btnCurAdd.TabIndex = 17;
-            this.btnCurAdd.Text = "Add ArtPiece";
-            this.btnCurAdd.UseVisualStyleBackColor = false;
+            this.btnArtPieceAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
+            this.btnArtPieceAdd.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnArtPieceAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnArtPieceAdd.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnArtPieceAdd.Location = new System.Drawing.Point(220, 318);
+            this.btnArtPieceAdd.Name = "btnArtPieceAdd";
+            this.btnArtPieceAdd.Size = new System.Drawing.Size(115, 26);
+            this.btnArtPieceAdd.TabIndex = 17;
+            this.btnArtPieceAdd.Text = "Add ArtPiece";
+            this.btnArtPieceAdd.UseVisualStyleBackColor = false;
             // 
-            // rtbCurators
+            // rtbArtPieces
             // 
-            this.rtbCurators.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
-            this.rtbCurators.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rtbCurators.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.rtbCurators.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbCurators.ForeColor = System.Drawing.Color.LightGray;
-            this.rtbCurators.Location = new System.Drawing.Point(0, 402);
-            this.rtbCurators.Name = "rtbCurators";
-            this.rtbCurators.Size = new System.Drawing.Size(709, 194);
-            this.rtbCurators.TabIndex = 16;
-            this.rtbCurators.Text = "";
+            this.rtbArtPieces.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
+            this.rtbArtPieces.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtbArtPieces.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.rtbArtPieces.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbArtPieces.ForeColor = System.Drawing.Color.LightGray;
+            this.rtbArtPieces.Location = new System.Drawing.Point(0, 402);
+            this.rtbArtPieces.Name = "rtbArtPieces";
+            this.rtbArtPieces.Size = new System.Drawing.Size(709, 194);
+            this.rtbArtPieces.TabIndex = 16;
+            this.rtbArtPieces.Text = "";
             // 
             // txtArtPieceYear
             // 
@@ -231,18 +231,6 @@
             this.gbStatus.TabStop = false;
             this.gbStatus.Text = "Status";
             // 
-            // rdBtnDisplay
-            // 
-            this.rdBtnDisplay.AutoSize = true;
-            this.rdBtnDisplay.Location = new System.Drawing.Point(18, 27);
-            this.rdBtnDisplay.Name = "rdBtnDisplay";
-            this.rdBtnDisplay.Size = new System.Drawing.Size(110, 25);
-            this.rdBtnDisplay.TabIndex = 0;
-            this.rdBtnDisplay.TabStop = true;
-            this.rdBtnDisplay.Tag = "D";
-            this.rdBtnDisplay.Text = "On Display";
-            this.rdBtnDisplay.UseVisualStyleBackColor = true;
-            // 
             // rdBtnStorage
             // 
             this.rdBtnStorage.AutoSize = true;
@@ -254,6 +242,18 @@
             this.rdBtnStorage.Tag = "S";
             this.rdBtnStorage.Text = "In Storage";
             this.rdBtnStorage.UseVisualStyleBackColor = true;
+            // 
+            // rdBtnDisplay
+            // 
+            this.rdBtnDisplay.AutoSize = true;
+            this.rdBtnDisplay.Location = new System.Drawing.Point(18, 27);
+            this.rdBtnDisplay.Name = "rdBtnDisplay";
+            this.rdBtnDisplay.Size = new System.Drawing.Size(110, 25);
+            this.rdBtnDisplay.TabIndex = 0;
+            this.rdBtnDisplay.TabStop = true;
+            this.rdBtnDisplay.Tag = "D";
+            this.rdBtnDisplay.Text = "On Display";
+            this.rdBtnDisplay.UseVisualStyleBackColor = true;
             // 
             // FrmAddArtPieces
             // 
@@ -268,9 +268,9 @@
             this.Controls.Add(this.lblArtPieceArtID);
             this.Controls.Add(this.txtArtPieceValue);
             this.Controls.Add(this.lblArtPieceValue);
-            this.Controls.Add(this.btnCurView);
-            this.Controls.Add(this.btnCurAdd);
-            this.Controls.Add(this.rtbCurators);
+            this.Controls.Add(this.btnArtPieceView);
+            this.Controls.Add(this.btnArtPieceAdd);
+            this.Controls.Add(this.rtbArtPieces);
             this.Controls.Add(this.txtArtPieceYear);
             this.Controls.Add(this.txtArtPieceTitle);
             this.Controls.Add(this.txtArtPieceID);
@@ -279,7 +279,7 @@
             this.Controls.Add(this.lblArtPieceID);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAddArtPieces";
             this.Text = "FrmAddArtPieces";
             this.gbStatus.ResumeLayout(false);
@@ -291,9 +291,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnCurView;
-        private System.Windows.Forms.Button btnCurAdd;
-        private System.Windows.Forms.RichTextBox rtbCurators;
+        private System.Windows.Forms.Button btnArtPieceView;
+        private System.Windows.Forms.Button btnArtPieceAdd;
+        private System.Windows.Forms.RichTextBox rtbArtPieces;
         private System.Windows.Forms.TextBox txtArtPieceYear;
         private System.Windows.Forms.TextBox txtArtPieceTitle;
         private System.Windows.Forms.TextBox txtArtPieceID;

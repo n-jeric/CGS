@@ -17,12 +17,12 @@ namespace CGS_WinForm
             InitializeComponent();
             CustomizeDesign();
         }
-
+        
+        #region SubMenu Display
         private void CustomizeDesign()
         {
             pnlSubArtPiece.Visible = false;
         }
-
         private void HideSubMenu()
         {
             if (pnlSubArtPiece.Visible == true)
@@ -30,7 +30,6 @@ namespace CGS_WinForm
                 pnlSubArtPiece.Visible = false;
             }
         }
-
         private void ShowSubMenu(Panel subMenu)
         {
             if(subMenu.Visible == false)
@@ -41,50 +40,52 @@ namespace CGS_WinForm
             else
                 subMenu.Visible = false;
         }
+        #endregion
 
-        private void btnArtPiece_Click(object sender, EventArgs e)
-        {
-            ShowSubMenu(pnlSubArtPiece);
-        }
-
-        private void btnCurator_Click(object sender, EventArgs e)
-        {
-            HideSubMenu();
-            OpenChildForm(new FrmCurators());
-        }
-
-        private void btnArtist_Click(object sender, EventArgs e)
-        {
-            HideSubMenu();
-            OpenChildForm(new FrmArtists());
-        }
-
-        private void btnAddArtists_Click(object sender, EventArgs e)
-        {
-           OpenChildForm(new FrmAddArtPieces());
-        }
-
-        private void btnSellArtPieces_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        #region ChildForms
         private Form activeForm = null;
         private void OpenChildForm(Form childForm)
         {
-            if(activeForm != null)
+            if (activeForm != null)
             {
                 activeForm.Close();
             }
             activeForm = childForm;
             childForm.TopLevel = false;
-            childForm.FormBorderStyle= FormBorderStyle.None;
+            childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
             pnlChilForm.Controls.Add(childForm);
             pnlChilForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
+        #endregion
+
+        #region Buttons
+        private void btnCurator_Click(object sender, EventArgs e)
+        {
+            HideSubMenu();
+            OpenChildForm(new FrmCurators());
+        }
+        private void btnArtist_Click(object sender, EventArgs e)
+        {
+            HideSubMenu();
+            OpenChildForm(new FrmArtists());
+        }
+        private void btnArtPiece_Click(object sender, EventArgs e)
+        {
+            ShowSubMenu(pnlSubArtPiece);
+        }
+        private void btnAddArtPieces_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmAddArtPieces());
+        }
+        private void btnSellArtPieces_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmSellArtPiece());
+        }
+        #endregion
+
 
 
     }
