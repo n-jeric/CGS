@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CGS_WinLibrary
 {
-    internal class Artist: Person
+    class Artist: Person
     {
         public string ArtistID { get; set; }
 
