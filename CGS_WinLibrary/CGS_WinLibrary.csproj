@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Artist.cs" />
     <Compile Include="Curator.cs" />
     <Compile Include="Gallery.cs" />
     <Compile Include="Person.cs" />
