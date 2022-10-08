@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CGS_WinLibrary
 {
-    internal class Gallery
+    public class Gallery
     {
         Curators myCurators = new Curators();
         Artists myArtists = new Artists();
@@ -163,6 +163,52 @@ namespace CGS_WinLibrary
             return info;
         }
         #endregion
+
+        #region Sell ArtPiece
+        public (string cID, double cCom) CuratorCommision(string curID, double comBase)
+        {
+            string cID = "";
+            double curComm = 0.0;
+
+            foreach (Curator cur in myCurators)
+            {
+                if (cur.GetID() == curID)
+                {
+                    double startComm = cur.Commission;
+                    cur.SetComm(comBase);
+                    cID = cur.GetID();
+                    curComm = cur.Commission - startComm;
+                }
+            }
+            return (cID: cID, cCom: curComm);
+        }
+        public string SellArtPiece(string artpieceID, double price)
+        {
+            foreach (ArtPiece piece in myArtPieces)
+            {
+                if (piece.GetID() == artpieceID)
+                {
+                    if (piece.Status == Status.S)
+                    {
+                        return "Error. This ArtPiece is sold";
+                    }
+                    if (price < piece.Value)
+                    {
+                        return "Error! The entered price is below the value of the ArtPiece.";
+                    }
+                    piece.ChangeStatus(Status.S);
+                    piece.PriceSale(price);
+
+                    (string cID, double cComm) = CuratorCommision(piece.CuratorID, piece.CalculateCommission(price));
+
+                    return $"Success! {artpieceID} \"{piece.Title}\" has been sold\nCurator {cID} assigned ${cComm:N2} commission";
+                }
+            }
+            return "Error. This ArtPiece does not exist";
+        }
+        #endregion
+
+
 
     }
 }
