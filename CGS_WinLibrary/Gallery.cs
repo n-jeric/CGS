@@ -50,6 +50,61 @@ namespace CGS_WinLibrary
         }
         #endregion
 
+        #region Add
+        public string AddCurator(string curatorID, string firstName, string lastName)
+        {
+            if (curatorID.Length != 5)
+            {
+                return "Error..! The curator ID should be 5 chars.";
+            }
+            if (CuratorVerifier(curatorID) == true)
+            {
+                return "Error! This ID already exists!";
+            }
+            if (firstName.Length + lastName.Length > 40)
+            {
+                return "Error! Names should be 40 chars or less";
+            }
+            myCurators.AddCurator(new Curator(curatorID, firstName, lastName));
+            return "Success! The curator added to the list";
+        }
+        public string AddArtist(string artistID, string firstName, string lastName)
+        {
+            if (artistID.Length != 5)
+            {
+                return "Error! The artist ID should be 5 chars.";
+            }
+            if (ArtistVarifier(artistID) == true)
+            {
+                return "Error! There exist this ID for another artist!";
+            }
+            if (firstName.Length + lastName.Length > 40)
+            {
+                return "Error...! Names should be less than 40 characters";
+            }
+            myArtists.AddArtist(new Artist(artistID, firstName, lastName));
+            return "Success! The artist added to the list";
+        }
+        public string AddArtPiece(string artPieceID, string title, int year, double value, string artistID, string curatorID, Status status)
+        {
+            if (artPieceID.Length != 5)
+            {
+                return "Error! ID should be exactly 5 chars.";
+            }
+            if (ArtPieceVarifier(artPieceID))
+            {
+                return "Error! This ID already exists!";
+            }
+            if (CuratorVerifier(curatorID) == false || ArtistVarifier(artistID) == false)
+            {
+                return "Error! Either AristID or CuratorID is incorrect.";
+            }
+            myArtPieces.AddPiece(new ArtPiece(artPieceID, title, year, value, artistID, curatorID, status));
+            return "ArtPiece has been successfully added to the list.";
+        }
+        #endregion
 
 
+
+    }
 }

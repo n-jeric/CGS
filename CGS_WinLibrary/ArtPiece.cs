@@ -21,13 +21,14 @@ namespace CGS_WinLibrary
         public string ArtistID { get => artistID; set => artistID = value; }
         public string CuratorID { get => curatorID; set => curatorID = value; }
 
-        public ArtPiece(string pieceID, string title, int year, double value, string artistID, string curatorID)
+        public ArtPiece(string pieceID, string title, int year, double value, string artistID, string curatorID, Status status)
         {
             PieceID = pieceID;
             Title = title;
             Year = year;
             Value = value;
-            Estimate = 0.0; //The constructor does not receive the Estimate (price sold) or the status. Set the default for price to 0.
+            Estimate = 0.0; //The constructor does not receive the Estimate (price sold). Set the default for price to 0.
+            Status = status;
             this.artistID = artistID;
             this.curatorID = curatorID;
         }
