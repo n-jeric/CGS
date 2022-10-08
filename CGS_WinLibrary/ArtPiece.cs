@@ -37,7 +37,7 @@ namespace CGS_WinLibrary
         {
             return $"{PieceID} {Title} {Year} {Value.ToString("N2")} {Estimate.ToString("N2")} {this.artistID} {this.curatorID} {this.status}";
         }
-        public string display()
+        public string Display()
         {
             return $"\n\tPieceID: {PieceID}\n\tTitle: {Title}\n\tYear: {Year}\n\tPrice: {Value.ToString("N2")} \n\tEstimate: {Estimate.ToString("N2")} \n\tArtistID: {this.artistID} \n\tCurrtorID: {this.curatorID} \n\tStatus: {this.status}\n=====\n";
         }

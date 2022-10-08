@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -104,7 +105,64 @@ namespace CGS_WinLibrary
         }
         #endregion
 
+        #region List
+        public string ListArtists()
+        {
+            string info = "";
+            for (int i = 0; i < myArtists.Count; i++)
+            {
+                info += $"Artist #{i + 1}: {myArtists[i].toString()}\n";
+            }
+            return info;
+        }
+        public string ListCurators()
+        {
+            string info = "";
+            for (int i = 0; i < myCurators.Count; i++)
+            {
+                info += $"Curator #{i + 1}: {myCurators[i].toString()}\n";
 
+            }
+            return info;
+        }
+        public string ListPieces()
+        {
+            string info = "";
+            for (int i = 0; i < myArtPieces.Count; i++)
+            {
+                info += $"ArtPiece #{i + 1}: {myArtPieces[i].toString()}\n";
+            }
+            return info;
+        }
+        public string ListSalePieces()
+        {
+            string info = "";
+            for (int i = 0; i < myArtPieces.Count; i++)
+            {
+                if (myArtPieces[i].Status != Status.S)
+                {
+                    info += $"ArtPiece #{i + 1}: {myArtPieces[i].toString()}\n";
+                }
+            }
+            return info;
+        }
+        public string ListSalePieces(string apID)
+        {
+            string info = "";
+            foreach (ArtPiece artPiece in myArtPieces)
+            {
+                if (artPiece.GetID() == apID && artPiece.Status != Status.S)
+                {
+                    info = artPiece.Display();
+                }
+                else
+                {
+                    info = "ArtPiece not available for sale";
+                }
+            }
+            return info;
+        }
+        #endregion
 
     }
 }
