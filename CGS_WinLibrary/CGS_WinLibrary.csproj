@@ -42,8 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Artist.cs" />
+    <Compile Include="Artists.cs" />
     <Compile Include="ArtPiece.cs" />
+    <Compile Include="ArtPieces.cs" />
     <Compile Include="Curator.cs" />
+    <Compile Include="Curators.cs" />
     <Compile Include="Gallery.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
