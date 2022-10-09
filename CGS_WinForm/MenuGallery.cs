@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CGS_WinLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,8 @@ namespace CGS_WinForm
             CustomizeDesign();
         }
         
+        Gallery gallery = new Gallery();
+
         #region SubMenu Display
         private void CustomizeDesign()
         {
@@ -65,7 +68,7 @@ namespace CGS_WinForm
         private void btnCurator_Click(object sender, EventArgs e)
         {
             HideSubMenu();
-            OpenChildForm(new FrmCurators());
+            OpenChildForm(new FrmCurators(gallery));
         }
         private void btnArtist_Click(object sender, EventArgs e)
         {
@@ -84,9 +87,19 @@ namespace CGS_WinForm
         {
             OpenChildForm(new FrmSellArtPiece());
         }
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to exit the app.?",
+              "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2).ToString() == "Yes")
+            {
+                Application.Exit();
+            }
+            else
+            {
+                activeForm?.Close();
+            }
+        }
         #endregion
-
-
 
     }
 }

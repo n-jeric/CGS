@@ -62,9 +62,9 @@ namespace CGS_WinLibrary
             {
                 return "Error! This ID already exists!";
             }
-            if (firstName.Length + lastName.Length > 40)
+            if (firstName.Length + lastName.Length > 40 || string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName))
             {
-                return "Error! Names should be 40 chars or less";
+                return "Error! Names required and should be 40 chars or less";
             }
             myCurators.AddCurator(new Curator(curatorID, firstName, lastName));
             return "Success! The curator added to the list";

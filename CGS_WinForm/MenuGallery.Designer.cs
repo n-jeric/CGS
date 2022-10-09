@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.pnlSideBar = new System.Windows.Forms.Panel();
-            this.pnlLogo = new System.Windows.Forms.Panel();
-            this.btnCurator = new System.Windows.Forms.Button();
-            this.btnArtist = new System.Windows.Forms.Button();
-            this.btnArtPiece = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.pnlSubArtPiece = new System.Windows.Forms.Panel();
-            this.btnAddArtPieces = new System.Windows.Forms.Button();
             this.btnSellArtPieces = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAddArtPieces = new System.Windows.Forms.Button();
+            this.btnArtPiece = new System.Windows.Forms.Button();
+            this.btnArtist = new System.Windows.Forms.Button();
+            this.btnCurator = new System.Windows.Forms.Button();
+            this.pnlLogo = new System.Windows.Forms.Panel();
             this.pnlChilForm = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.pnlCenterLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.pnlSideBar.SuspendLayout();
             this.pnlSubArtPiece.SuspendLayout();
             this.pnlChilForm.SuspendLayout();
@@ -52,7 +52,7 @@
             // 
             this.pnlSideBar.AutoScroll = true;
             this.pnlSideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.pnlSideBar.Controls.Add(this.button1);
+            this.pnlSideBar.Controls.Add(this.btnExit);
             this.pnlSideBar.Controls.Add(this.pnlSubArtPiece);
             this.pnlSideBar.Controls.Add(this.btnArtPiece);
             this.pnlSideBar.Controls.Add(this.btnArtist);
@@ -64,64 +64,22 @@
             this.pnlSideBar.Size = new System.Drawing.Size(225, 596);
             this.pnlSideBar.TabIndex = 0;
             // 
-            // pnlLogo
+            // btnExit
             // 
-            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(225, 100);
-            this.pnlLogo.TabIndex = 0;
-            // 
-            // btnCurator
-            // 
-            this.btnCurator.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCurator.FlatAppearance.BorderSize = 0;
-            this.btnCurator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCurator.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCurator.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCurator.Location = new System.Drawing.Point(0, 100);
-            this.btnCurator.Name = "btnCurator";
-            this.btnCurator.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnCurator.Size = new System.Drawing.Size(225, 50);
-            this.btnCurator.TabIndex = 1;
-            this.btnCurator.Text = "Curators";
-            this.btnCurator.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCurator.UseVisualStyleBackColor = true;
-            this.btnCurator.Click += new System.EventHandler(this.btnCurator_Click);
-            // 
-            // btnArtist
-            // 
-            this.btnArtist.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnArtist.FlatAppearance.BorderSize = 0;
-            this.btnArtist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnArtist.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArtist.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnArtist.Location = new System.Drawing.Point(0, 150);
-            this.btnArtist.Name = "btnArtist";
-            this.btnArtist.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnArtist.Size = new System.Drawing.Size(225, 50);
-            this.btnArtist.TabIndex = 2;
-            this.btnArtist.Text = "Artists";
-            this.btnArtist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnArtist.UseVisualStyleBackColor = true;
-            this.btnArtist.Click += new System.EventHandler(this.btnArtist_Click);
-            // 
-            // btnArtPiece
-            // 
-            this.btnArtPiece.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnArtPiece.FlatAppearance.BorderSize = 0;
-            this.btnArtPiece.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnArtPiece.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArtPiece.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnArtPiece.Location = new System.Drawing.Point(0, 200);
-            this.btnArtPiece.Name = "btnArtPiece";
-            this.btnArtPiece.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnArtPiece.Size = new System.Drawing.Size(225, 50);
-            this.btnArtPiece.TabIndex = 3;
-            this.btnArtPiece.Text = "Art Pieces";
-            this.btnArtPiece.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnArtPiece.UseVisualStyleBackColor = true;
-            this.btnArtPiece.Click += new System.EventHandler(this.btnArtPiece_Click);
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnExit.Location = new System.Drawing.Point(0, 331);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnExit.Size = new System.Drawing.Size(225, 50);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Text = "Exit";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // pnlSubArtPiece
             // 
@@ -133,24 +91,6 @@
             this.pnlSubArtPiece.Name = "pnlSubArtPiece";
             this.pnlSubArtPiece.Size = new System.Drawing.Size(225, 81);
             this.pnlSubArtPiece.TabIndex = 4;
-            // 
-            // btnAddArtPieces
-            // 
-            this.btnAddArtPieces.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(37)))), ((int)(((byte)(60)))));
-            this.btnAddArtPieces.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAddArtPieces.FlatAppearance.BorderSize = 0;
-            this.btnAddArtPieces.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RosyBrown;
-            this.btnAddArtPieces.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddArtPieces.ForeColor = System.Drawing.Color.LightGray;
-            this.btnAddArtPieces.Location = new System.Drawing.Point(0, 0);
-            this.btnAddArtPieces.Name = "btnAddArtPieces";
-            this.btnAddArtPieces.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnAddArtPieces.Size = new System.Drawing.Size(225, 40);
-            this.btnAddArtPieces.TabIndex = 0;
-            this.btnAddArtPieces.Text = "Add Art Piece";
-            this.btnAddArtPieces.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddArtPieces.UseVisualStyleBackColor = false;
-            this.btnAddArtPieces.Click += new System.EventHandler(this.btnAddArtPieces_Click);
             // 
             // btnSellArtPieces
             // 
@@ -170,21 +110,82 @@
             this.btnSellArtPieces.UseVisualStyleBackColor = false;
             this.btnSellArtPieces.Click += new System.EventHandler(this.btnSellArtPieces_Click);
             // 
-            // button1
+            // btnAddArtPieces
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Location = new System.Drawing.Point(0, 331);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(225, 50);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Exit";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAddArtPieces.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(37)))), ((int)(((byte)(60)))));
+            this.btnAddArtPieces.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddArtPieces.FlatAppearance.BorderSize = 0;
+            this.btnAddArtPieces.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RosyBrown;
+            this.btnAddArtPieces.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddArtPieces.ForeColor = System.Drawing.Color.LightGray;
+            this.btnAddArtPieces.Location = new System.Drawing.Point(0, 0);
+            this.btnAddArtPieces.Name = "btnAddArtPieces";
+            this.btnAddArtPieces.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnAddArtPieces.Size = new System.Drawing.Size(225, 40);
+            this.btnAddArtPieces.TabIndex = 0;
+            this.btnAddArtPieces.Text = "Add Art Piece";
+            this.btnAddArtPieces.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddArtPieces.UseVisualStyleBackColor = false;
+            this.btnAddArtPieces.Click += new System.EventHandler(this.btnAddArtPieces_Click);
+            // 
+            // btnArtPiece
+            // 
+            this.btnArtPiece.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnArtPiece.FlatAppearance.BorderSize = 0;
+            this.btnArtPiece.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnArtPiece.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArtPiece.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnArtPiece.Location = new System.Drawing.Point(0, 200);
+            this.btnArtPiece.Name = "btnArtPiece";
+            this.btnArtPiece.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnArtPiece.Size = new System.Drawing.Size(225, 50);
+            this.btnArtPiece.TabIndex = 3;
+            this.btnArtPiece.Text = "Art Pieces";
+            this.btnArtPiece.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnArtPiece.UseVisualStyleBackColor = true;
+            this.btnArtPiece.Click += new System.EventHandler(this.btnArtPiece_Click);
+            // 
+            // btnArtist
+            // 
+            this.btnArtist.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnArtist.FlatAppearance.BorderSize = 0;
+            this.btnArtist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnArtist.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArtist.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnArtist.Location = new System.Drawing.Point(0, 150);
+            this.btnArtist.Name = "btnArtist";
+            this.btnArtist.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnArtist.Size = new System.Drawing.Size(225, 50);
+            this.btnArtist.TabIndex = 2;
+            this.btnArtist.Text = "Artists";
+            this.btnArtist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnArtist.UseVisualStyleBackColor = true;
+            this.btnArtist.Click += new System.EventHandler(this.btnArtist_Click);
+            // 
+            // btnCurator
+            // 
+            this.btnCurator.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCurator.FlatAppearance.BorderSize = 0;
+            this.btnCurator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCurator.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCurator.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCurator.Location = new System.Drawing.Point(0, 100);
+            this.btnCurator.Name = "btnCurator";
+            this.btnCurator.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnCurator.Size = new System.Drawing.Size(225, 50);
+            this.btnCurator.TabIndex = 1;
+            this.btnCurator.Text = "Curators";
+            this.btnCurator.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCurator.UseVisualStyleBackColor = true;
+            this.btnCurator.Click += new System.EventHandler(this.btnCurator_Click);
+            // 
+            // pnlLogo
+            // 
+            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogo.Name = "pnlLogo";
+            this.pnlLogo.Size = new System.Drawing.Size(225, 100);
+            this.pnlLogo.TabIndex = 0;
             // 
             // pnlChilForm
             // 
@@ -195,17 +196,6 @@
             this.pnlChilForm.Name = "pnlChilForm";
             this.pnlChilForm.Size = new System.Drawing.Size(709, 596);
             this.pnlChilForm.TabIndex = 1;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblTitle.Location = new System.Drawing.Point(-4, 135);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(309, 23);
-            this.lblTitle.TabIndex = 1;
-            this.lblTitle.Text = "Computerized Gallery Systems";
             // 
             // pnlCenterLogo
             // 
@@ -228,6 +218,17 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblTitle.Location = new System.Drawing.Point(-4, 135);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(309, 23);
+            this.lblTitle.TabIndex = 1;
+            this.lblTitle.Text = "Computerized Gallery Systems";
+            // 
             // MenuGallery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -236,7 +237,7 @@
             this.Controls.Add(this.pnlChilForm);
             this.Controls.Add(this.pnlSideBar);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "MenuGallery";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -261,7 +262,7 @@
         private System.Windows.Forms.Button btnArtist;
         private System.Windows.Forms.Button btnCurator;
         private System.Windows.Forms.Panel pnlLogo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel pnlChilForm;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTitle;

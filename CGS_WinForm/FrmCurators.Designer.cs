@@ -47,7 +47,7 @@
             this.lblCurFName.Location = new System.Drawing.Point(57, 62);
             this.lblCurFName.Name = "lblCurFName";
             this.lblCurFName.Size = new System.Drawing.Size(81, 20);
-            this.lblCurFName.TabIndex = 0;
+            this.lblCurFName.TabIndex = 10;
             this.lblCurFName.Text = "First name";
             // 
             // lblCurLName
@@ -57,7 +57,7 @@
             this.lblCurLName.Location = new System.Drawing.Point(57, 118);
             this.lblCurLName.Name = "lblCurLName";
             this.lblCurLName.Size = new System.Drawing.Size(83, 20);
-            this.lblCurLName.TabIndex = 1;
+            this.lblCurLName.TabIndex = 11;
             this.lblCurLName.Text = "Last name";
             // 
             // lblCurID
@@ -67,7 +67,7 @@
             this.lblCurID.Location = new System.Drawing.Point(57, 174);
             this.lblCurID.Name = "lblCurID";
             this.lblCurID.Size = new System.Drawing.Size(85, 20);
-            this.lblCurID.TabIndex = 2;
+            this.lblCurID.TabIndex = 12;
             this.lblCurID.Text = "Curator ID";
             // 
             // txtCurFName
@@ -75,20 +75,22 @@
             this.txtCurFName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
             this.txtCurFName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCurFName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurFName.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtCurFName.Location = new System.Drawing.Point(180, 59);
             this.txtCurFName.Name = "txtCurFName";
             this.txtCurFName.Size = new System.Drawing.Size(155, 26);
-            this.txtCurFName.TabIndex = 3;
+            this.txtCurFName.TabIndex = 0;
             // 
             // txtCurLName
             // 
             this.txtCurLName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
             this.txtCurLName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCurLName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurLName.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtCurLName.Location = new System.Drawing.Point(180, 115);
             this.txtCurLName.Name = "txtCurLName";
             this.txtCurLName.Size = new System.Drawing.Size(155, 26);
-            this.txtCurLName.TabIndex = 4;
+            this.txtCurLName.TabIndex = 1;
             // 
             // txtCurID
             // 
@@ -100,19 +102,19 @@
             this.txtCurID.MaxLength = 5;
             this.txtCurID.Name = "txtCurID";
             this.txtCurID.Size = new System.Drawing.Size(155, 26);
-            this.txtCurID.TabIndex = 5;
+            this.txtCurID.TabIndex = 2;
             // 
             // rtbCurators
             // 
             this.rtbCurators.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
             this.rtbCurators.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtbCurators.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.rtbCurators.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbCurators.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbCurators.ForeColor = System.Drawing.Color.LightGray;
             this.rtbCurators.Location = new System.Drawing.Point(0, 402);
             this.rtbCurators.Name = "rtbCurators";
             this.rtbCurators.Size = new System.Drawing.Size(709, 194);
-            this.rtbCurators.TabIndex = 6;
+            this.rtbCurators.TabIndex = 12;
             this.rtbCurators.Text = "";
             // 
             // btnCurAdd
@@ -124,9 +126,10 @@
             this.btnCurAdd.Location = new System.Drawing.Point(220, 223);
             this.btnCurAdd.Name = "btnCurAdd";
             this.btnCurAdd.Size = new System.Drawing.Size(115, 26);
-            this.btnCurAdd.TabIndex = 7;
+            this.btnCurAdd.TabIndex = 6;
             this.btnCurAdd.Text = "Add Curator";
             this.btnCurAdd.UseVisualStyleBackColor = false;
+            this.btnCurAdd.Click += new System.EventHandler(this.btnCurAdd_Click);
             // 
             // btnCurSave
             // 
@@ -140,6 +143,7 @@
             this.btnCurSave.TabIndex = 8;
             this.btnCurSave.Text = "Save Curator";
             this.btnCurSave.UseVisualStyleBackColor = false;
+            this.btnCurSave.Click += new System.EventHandler(this.btnCurSave_Click);
             // 
             // btnCurView
             // 
@@ -151,9 +155,10 @@
             this.btnCurView.Location = new System.Drawing.Point(12, 370);
             this.btnCurView.Name = "btnCurView";
             this.btnCurView.Size = new System.Drawing.Size(115, 26);
-            this.btnCurView.TabIndex = 9;
+            this.btnCurView.TabIndex = 7;
             this.btnCurView.Text = "View Curators";
             this.btnCurView.UseVisualStyleBackColor = false;
+            this.btnCurView.Click += new System.EventHandler(this.btnCurView_Click);
             // 
             // FrmCurators
             // 
@@ -173,9 +178,10 @@
             this.Controls.Add(this.lblCurFName);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmCurators";
             this.Text = "FrmCurators";
+            this.Load += new System.EventHandler(this.FrmCurators_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
