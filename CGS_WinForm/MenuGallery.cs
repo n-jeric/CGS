@@ -81,7 +81,7 @@ namespace CGS_WinForm
         }
         private void btnAddArtPieces_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmAddArtPieces());
+            OpenChildForm(new FrmAddArtPieces(gallery));
         }
         private void btnSellArtPieces_Click(object sender, EventArgs e)
         {

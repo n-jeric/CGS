@@ -44,8 +44,8 @@
             this.txtArtPieceCurID = new System.Windows.Forms.TextBox();
             this.lblArtPieceCurID = new System.Windows.Forms.Label();
             this.gbStatus = new System.Windows.Forms.GroupBox();
-            this.rdBtnStorage = new System.Windows.Forms.RadioButton();
-            this.rdBtnDisplay = new System.Windows.Forms.RadioButton();
+            this.rbStorage = new System.Windows.Forms.RadioButton();
+            this.rbDisplay = new System.Windows.Forms.RadioButton();
             this.gbStatus.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,9 +59,10 @@
             this.btnArtPieceView.Location = new System.Drawing.Point(582, 370);
             this.btnArtPieceView.Name = "btnArtPieceView";
             this.btnArtPieceView.Size = new System.Drawing.Size(115, 26);
-            this.btnArtPieceView.TabIndex = 19;
+            this.btnArtPieceView.TabIndex = 14;
             this.btnArtPieceView.Text = "View ArtPieces";
             this.btnArtPieceView.UseVisualStyleBackColor = false;
+            this.btnArtPieceView.Click += new System.EventHandler(this.btnArtPieceView_Click);
             // 
             // btnArtPieceAdd
             // 
@@ -72,21 +73,23 @@
             this.btnArtPieceAdd.Location = new System.Drawing.Point(220, 318);
             this.btnArtPieceAdd.Name = "btnArtPieceAdd";
             this.btnArtPieceAdd.Size = new System.Drawing.Size(115, 26);
-            this.btnArtPieceAdd.TabIndex = 17;
+            this.btnArtPieceAdd.TabIndex = 13;
             this.btnArtPieceAdd.Text = "Add ArtPiece";
             this.btnArtPieceAdd.UseVisualStyleBackColor = false;
+            this.btnArtPieceAdd.Click += new System.EventHandler(this.btnArtPieceAdd_Click);
             // 
             // rtbArtPieces
             // 
             this.rtbArtPieces.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
             this.rtbArtPieces.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtbArtPieces.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.rtbArtPieces.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbArtPieces.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbArtPieces.ForeColor = System.Drawing.Color.LightGray;
             this.rtbArtPieces.Location = new System.Drawing.Point(0, 402);
             this.rtbArtPieces.Name = "rtbArtPieces";
             this.rtbArtPieces.Size = new System.Drawing.Size(709, 194);
             this.rtbArtPieces.TabIndex = 16;
+            this.rtbArtPieces.TabStop = false;
             this.rtbArtPieces.Text = "";
             // 
             // txtArtPieceYear
@@ -99,28 +102,30 @@
             this.txtArtPieceYear.MaxLength = 4;
             this.txtArtPieceYear.Name = "txtArtPieceYear";
             this.txtArtPieceYear.Size = new System.Drawing.Size(155, 26);
-            this.txtArtPieceYear.TabIndex = 15;
+            this.txtArtPieceYear.TabIndex = 5;
             // 
             // txtArtPieceTitle
             // 
             this.txtArtPieceTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
             this.txtArtPieceTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtArtPieceTitle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtArtPieceTitle.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtArtPieceTitle.Location = new System.Drawing.Point(180, 103);
             this.txtArtPieceTitle.Name = "txtArtPieceTitle";
             this.txtArtPieceTitle.Size = new System.Drawing.Size(155, 26);
-            this.txtArtPieceTitle.TabIndex = 14;
+            this.txtArtPieceTitle.TabIndex = 3;
             // 
             // txtArtPieceID
             // 
             this.txtArtPieceID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
             this.txtArtPieceID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtArtPieceID.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtArtPieceID.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtArtPieceID.Location = new System.Drawing.Point(180, 59);
             this.txtArtPieceID.MaxLength = 5;
             this.txtArtPieceID.Name = "txtArtPieceID";
             this.txtArtPieceID.Size = new System.Drawing.Size(155, 26);
-            this.txtArtPieceID.TabIndex = 13;
+            this.txtArtPieceID.TabIndex = 1;
             // 
             // lblArtPieceYear
             // 
@@ -129,7 +134,7 @@
             this.lblArtPieceYear.Location = new System.Drawing.Point(57, 143);
             this.lblArtPieceYear.Name = "lblArtPieceYear";
             this.lblArtPieceYear.Size = new System.Drawing.Size(41, 20);
-            this.lblArtPieceYear.TabIndex = 12;
+            this.lblArtPieceYear.TabIndex = 4;
             this.lblArtPieceYear.Text = "Year";
             // 
             // lblArtPieceTitle
@@ -139,17 +144,17 @@
             this.lblArtPieceTitle.Location = new System.Drawing.Point(57, 105);
             this.lblArtPieceTitle.Name = "lblArtPieceTitle";
             this.lblArtPieceTitle.Size = new System.Drawing.Size(35, 20);
-            this.lblArtPieceTitle.TabIndex = 11;
+            this.lblArtPieceTitle.TabIndex = 2;
             this.lblArtPieceTitle.Text = "Title";
             // 
             // lblArtPieceID
             // 
             this.lblArtPieceID.AutoSize = true;
             this.lblArtPieceID.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArtPieceID.Location = new System.Drawing.Point(57, 62);
+            this.lblArtPieceID.Location = new System.Drawing.Point(57, 63);
             this.lblArtPieceID.Name = "lblArtPieceID";
             this.lblArtPieceID.Size = new System.Drawing.Size(92, 20);
-            this.lblArtPieceID.TabIndex = 10;
+            this.lblArtPieceID.TabIndex = 0;
             this.lblArtPieceID.Text = "ArtPiece ID";
             // 
             // txtArtPieceValue
@@ -161,7 +166,7 @@
             this.txtArtPieceValue.Location = new System.Drawing.Point(180, 191);
             this.txtArtPieceValue.Name = "txtArtPieceValue";
             this.txtArtPieceValue.Size = new System.Drawing.Size(155, 26);
-            this.txtArtPieceValue.TabIndex = 21;
+            this.txtArtPieceValue.TabIndex = 7;
             // 
             // lblArtPieceValue
             // 
@@ -170,7 +175,7 @@
             this.lblArtPieceValue.Location = new System.Drawing.Point(57, 193);
             this.lblArtPieceValue.Name = "lblArtPieceValue";
             this.lblArtPieceValue.Size = new System.Drawing.Size(52, 20);
-            this.lblArtPieceValue.TabIndex = 20;
+            this.lblArtPieceValue.TabIndex = 6;
             this.lblArtPieceValue.Text = "Value";
             // 
             // txtArtPieceArtID
@@ -183,7 +188,7 @@
             this.txtArtPieceArtID.MaxLength = 5;
             this.txtArtPieceArtID.Name = "txtArtPieceArtID";
             this.txtArtPieceArtID.Size = new System.Drawing.Size(155, 26);
-            this.txtArtPieceArtID.TabIndex = 23;
+            this.txtArtPieceArtID.TabIndex = 9;
             // 
             // lblArtPieceArtID
             // 
@@ -192,7 +197,7 @@
             this.lblArtPieceArtID.Location = new System.Drawing.Point(57, 237);
             this.lblArtPieceArtID.Name = "lblArtPieceArtID";
             this.lblArtPieceArtID.Size = new System.Drawing.Size(64, 20);
-            this.lblArtPieceArtID.TabIndex = 22;
+            this.lblArtPieceArtID.TabIndex = 8;
             this.lblArtPieceArtID.Text = "Artist ID";
             // 
             // txtArtPieceCurID
@@ -205,7 +210,7 @@
             this.txtArtPieceCurID.MaxLength = 5;
             this.txtArtPieceCurID.Name = "txtArtPieceCurID";
             this.txtArtPieceCurID.Size = new System.Drawing.Size(155, 26);
-            this.txtArtPieceCurID.TabIndex = 25;
+            this.txtArtPieceCurID.TabIndex = 11;
             // 
             // lblArtPieceCurID
             // 
@@ -214,46 +219,46 @@
             this.lblArtPieceCurID.Location = new System.Drawing.Point(57, 281);
             this.lblArtPieceCurID.Name = "lblArtPieceCurID";
             this.lblArtPieceCurID.Size = new System.Drawing.Size(85, 20);
-            this.lblArtPieceCurID.TabIndex = 24;
+            this.lblArtPieceCurID.TabIndex = 10;
             this.lblArtPieceCurID.Text = "Curator ID";
             // 
             // gbStatus
             // 
-            this.gbStatus.Controls.Add(this.rdBtnStorage);
-            this.gbStatus.Controls.Add(this.rdBtnDisplay);
+            this.gbStatus.Controls.Add(this.rbStorage);
+            this.gbStatus.Controls.Add(this.rbDisplay);
             this.gbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gbStatus.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbStatus.ForeColor = System.Drawing.Color.Gainsboro;
             this.gbStatus.Location = new System.Drawing.Point(413, 59);
             this.gbStatus.Name = "gbStatus";
             this.gbStatus.Size = new System.Drawing.Size(200, 100);
-            this.gbStatus.TabIndex = 26;
+            this.gbStatus.TabIndex = 12;
             this.gbStatus.TabStop = false;
             this.gbStatus.Text = "Status";
             // 
-            // rdBtnStorage
+            // rbStorage
             // 
-            this.rdBtnStorage.AutoSize = true;
-            this.rdBtnStorage.Location = new System.Drawing.Point(18, 57);
-            this.rdBtnStorage.Name = "rdBtnStorage";
-            this.rdBtnStorage.Size = new System.Drawing.Size(109, 25);
-            this.rdBtnStorage.TabIndex = 1;
-            this.rdBtnStorage.TabStop = true;
-            this.rdBtnStorage.Tag = "S";
-            this.rdBtnStorage.Text = "In Storage";
-            this.rdBtnStorage.UseVisualStyleBackColor = true;
+            this.rbStorage.AutoSize = true;
+            this.rbStorage.Location = new System.Drawing.Point(18, 57);
+            this.rbStorage.Name = "rbStorage";
+            this.rbStorage.Size = new System.Drawing.Size(109, 25);
+            this.rbStorage.TabIndex = 1;
+            this.rbStorage.Tag = "S";
+            this.rbStorage.Text = "In Storage";
+            this.rbStorage.UseVisualStyleBackColor = true;
             // 
-            // rdBtnDisplay
+            // rbDisplay
             // 
-            this.rdBtnDisplay.AutoSize = true;
-            this.rdBtnDisplay.Location = new System.Drawing.Point(18, 27);
-            this.rdBtnDisplay.Name = "rdBtnDisplay";
-            this.rdBtnDisplay.Size = new System.Drawing.Size(110, 25);
-            this.rdBtnDisplay.TabIndex = 0;
-            this.rdBtnDisplay.TabStop = true;
-            this.rdBtnDisplay.Tag = "D";
-            this.rdBtnDisplay.Text = "On Display";
-            this.rdBtnDisplay.UseVisualStyleBackColor = true;
+            this.rbDisplay.AutoSize = true;
+            this.rbDisplay.Checked = true;
+            this.rbDisplay.Location = new System.Drawing.Point(18, 27);
+            this.rbDisplay.Name = "rbDisplay";
+            this.rbDisplay.Size = new System.Drawing.Size(110, 25);
+            this.rbDisplay.TabIndex = 0;
+            this.rbDisplay.TabStop = true;
+            this.rbDisplay.Tag = "D";
+            this.rbDisplay.Text = "On Display";
+            this.rbDisplay.UseVisualStyleBackColor = true;
             // 
             // FrmAddArtPieces
             // 
@@ -282,6 +287,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAddArtPieces";
             this.Text = "FrmAddArtPieces";
+            this.Load += new System.EventHandler(this.FrmAddArtPieces_Load);
             this.gbStatus.ResumeLayout(false);
             this.gbStatus.PerformLayout();
             this.ResumeLayout(false);
@@ -307,7 +313,7 @@
         private System.Windows.Forms.TextBox txtArtPieceCurID;
         private System.Windows.Forms.Label lblArtPieceCurID;
         private System.Windows.Forms.GroupBox gbStatus;
-        private System.Windows.Forms.RadioButton rdBtnStorage;
-        private System.Windows.Forms.RadioButton rdBtnDisplay;
+        private System.Windows.Forms.RadioButton rbStorage;
+        private System.Windows.Forms.RadioButton rbDisplay;
     }
 }
