@@ -73,7 +73,7 @@ namespace CGS_WinForm
         private void btnArtist_Click(object sender, EventArgs e)
         {
             HideSubMenu();
-            OpenChildForm(new FrmArtists());
+            OpenChildForm(new FrmArtists(gallery));
         }
         private void btnArtPiece_Click(object sender, EventArgs e)
         {

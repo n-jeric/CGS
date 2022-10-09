@@ -115,6 +115,7 @@
             this.rtbCurators.Name = "rtbCurators";
             this.rtbCurators.Size = new System.Drawing.Size(709, 194);
             this.rtbCurators.TabIndex = 12;
+            this.rtbCurators.TabStop = false;
             this.rtbCurators.Text = "";
             // 
             // btnCurAdd
