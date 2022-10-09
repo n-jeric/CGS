@@ -92,6 +92,7 @@
             this.rtbArtists.ForeColor = System.Drawing.Color.LightGray;
             this.rtbArtists.Location = new System.Drawing.Point(0, 402);
             this.rtbArtists.Name = "rtbArtists";
+            this.rtbArtists.ReadOnly = true;
             this.rtbArtists.Size = new System.Drawing.Size(709, 194);
             this.rtbArtists.TabIndex = 16;
             this.rtbArtists.TabStop = false;

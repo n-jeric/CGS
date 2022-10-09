@@ -87,6 +87,7 @@
             this.rtbArtPieces.ForeColor = System.Drawing.Color.LightGray;
             this.rtbArtPieces.Location = new System.Drawing.Point(0, 402);
             this.rtbArtPieces.Name = "rtbArtPieces";
+            this.rtbArtPieces.ReadOnly = true;
             this.rtbArtPieces.Size = new System.Drawing.Size(709, 194);
             this.rtbArtPieces.TabIndex = 16;
             this.rtbArtPieces.TabStop = false;

@@ -113,6 +113,7 @@
             this.rtbCurators.ForeColor = System.Drawing.Color.LightGray;
             this.rtbCurators.Location = new System.Drawing.Point(0, 402);
             this.rtbCurators.Name = "rtbCurators";
+            this.rtbCurators.ReadOnly = true;
             this.rtbCurators.Size = new System.Drawing.Size(709, 194);
             this.rtbCurators.TabIndex = 12;
             this.rtbCurators.TabStop = false;
