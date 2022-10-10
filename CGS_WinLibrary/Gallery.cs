@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -208,7 +209,53 @@ namespace CGS_WinLibrary
         }
         #endregion
 
-
+        #region Write to File
+        public string Write(string fPath, string textToFile)
+        {
+            try
+            {
+                using (StreamWriter textOut = new StreamWriter(fPath))
+                {
+                    textOut.WriteLine(textToFile);
+                }
+                return "OK";
+            }
+            catch (IOException ex)
+            {
+                return ex.Message.ToString();
+            }
+        }
+        public string WriteCurator(string dirPath)
+        {
+            string msg = "";
+            string filePath = dirPath + "Curator.txt";
+            if (myCurators.Count != 0)
+            {
+                string textToFile = "";
+                for (int i = 0; i < myCurators.Count; i++)
+                {
+                    textToFile += $"{myCurators[i].CuratorID},{myCurators[i].FirstName},{myCurators[i].LastName}\n";
+                }
+                msg = Write(filePath, textToFile);
+            }
+            return msg;
+        }
+        public string WriteArtist(string dirPath)
+        {
+            string msg = "";
+            string filePath = dirPath + "Artist.txt";
+            if (myArtists.Count != 0)
+            {
+                string textToFile = "";
+                for (int i = 0; i < myArtists.Count; i++)
+                {
+                    textToFile += $"{myArtists[i].ArtistID},{myArtists[i].FirstName},{myArtists[i].LastName}\n";
+                }
+                msg = Write(filePath, textToFile);
+            }
+            return msg;
+        }
+        #endregion
 
     }
 }

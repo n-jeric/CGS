@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,13 @@ namespace CGS_WinForm
         }
         
         Gallery gallery = new Gallery();
+        internal static string dirPath = @".\TextFolder\";
+
+        private void MenuGallery_Load(object sender, EventArgs e)
+        {
+            if (!Directory.Exists(dirPath))
+                Directory.CreateDirectory(dirPath);
+        }
 
         #region SubMenu Display
         private void CustomizeDesign()
@@ -100,6 +108,7 @@ namespace CGS_WinForm
             }
         }
         #endregion
+
 
     }
 }

@@ -242,6 +242,7 @@
             this.Name = "MenuGallery";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuGallery";
+            this.Load += new System.EventHandler(this.MenuGallery_Load);
             this.pnlSideBar.ResumeLayout(false);
             this.pnlSubArtPiece.ResumeLayout(false);
             this.pnlChilForm.ResumeLayout(false);

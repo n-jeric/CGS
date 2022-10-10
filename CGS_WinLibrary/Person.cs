@@ -16,6 +16,8 @@ namespace CGS_WinLibrary
             this.firstName = firstName;
             this.lastName = lastName;
         }
+        public string FirstName { get => firstName; set => firstName = value; }
+        public string LastName { get => lastName; set => lastName = value; }
 
         public void Update(string _fn, string _ln)
         {

@@ -75,16 +75,18 @@ namespace CGS_WinForm
             }
         }
 
-        private void btnCurSave_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCurView_Click(object sender, EventArgs e)
         {
             rtbCurators.Clear();
             rtbCurators.AppendText(gallery.ListCurators());
         }
+
+        private void btnCurSave_Click(object sender, EventArgs e)
+        {
+            string msg = gallery.WriteCurator(MenuGallery.dirPath);
+            MessageBox.Show(msg);
+        }
+
 
 
     }

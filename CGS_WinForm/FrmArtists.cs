@@ -78,7 +78,8 @@ namespace CGS_WinForm
 
         private void btnArtistSave_Click(object sender, EventArgs e)
         {
-
+            string msg = gallery.WriteArtist(MenuGallery.dirPath);
+            MessageBox.Show(msg);
         }
     }
 }
