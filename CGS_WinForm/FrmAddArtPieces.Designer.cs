@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnArtPieceView = new System.Windows.Forms.Button();
             this.btnArtPieceAdd = new System.Windows.Forms.Button();
-            this.rtbArtPieces = new System.Windows.Forms.RichTextBox();
             this.txtArtPieceYear = new System.Windows.Forms.TextBox();
             this.txtArtPieceTitle = new System.Windows.Forms.TextBox();
             this.txtArtPieceID = new System.Windows.Forms.TextBox();
@@ -46,7 +48,9 @@
             this.gbStatus = new System.Windows.Forms.GroupBox();
             this.rbStorage = new System.Windows.Forms.RadioButton();
             this.rbDisplay = new System.Windows.Forms.RadioButton();
+            this.dataGridViewAP = new System.Windows.Forms.DataGridView();
             this.gbStatus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAP)).BeginInit();
             this.SuspendLayout();
             // 
             // btnArtPieceView
@@ -77,21 +81,6 @@
             this.btnArtPieceAdd.Text = "Add ArtPiece";
             this.btnArtPieceAdd.UseVisualStyleBackColor = false;
             this.btnArtPieceAdd.Click += new System.EventHandler(this.btnArtPieceAdd_Click);
-            // 
-            // rtbArtPieces
-            // 
-            this.rtbArtPieces.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
-            this.rtbArtPieces.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rtbArtPieces.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.rtbArtPieces.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbArtPieces.ForeColor = System.Drawing.Color.LightGray;
-            this.rtbArtPieces.Location = new System.Drawing.Point(0, 402);
-            this.rtbArtPieces.Name = "rtbArtPieces";
-            this.rtbArtPieces.ReadOnly = true;
-            this.rtbArtPieces.Size = new System.Drawing.Size(709, 194);
-            this.rtbArtPieces.TabIndex = 16;
-            this.rtbArtPieces.TabStop = false;
-            this.rtbArtPieces.Text = "";
             // 
             // txtArtPieceYear
             // 
@@ -261,12 +250,57 @@
             this.rbDisplay.Text = "On Display";
             this.rbDisplay.UseVisualStyleBackColor = true;
             // 
+            // dataGridViewAP
+            // 
+            this.dataGridViewAP.AllowUserToAddRows = false;
+            this.dataGridViewAP.AllowUserToDeleteRows = false;
+            this.dataGridViewAP.AllowUserToResizeRows = false;
+            this.dataGridViewAP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewAP.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
+            this.dataGridViewAP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewAP.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewAP.ColumnHeadersHeight = 30;
+            this.dataGridViewAP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SlateGray;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewAP.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewAP.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridViewAP.EnableHeadersVisualStyles = false;
+            this.dataGridViewAP.Location = new System.Drawing.Point(0, 402);
+            this.dataGridViewAP.Name = "dataGridViewAP";
+            this.dataGridViewAP.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dataGridViewAP.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewAP.RowHeadersVisible = false;
+            this.dataGridViewAP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewAP.Size = new System.Drawing.Size(709, 194);
+            this.dataGridViewAP.TabIndex = 15;
+            this.dataGridViewAP.TabStop = false;
+            // 
             // FrmAddArtPieces
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(709, 596);
+            this.Controls.Add(this.dataGridViewAP);
             this.Controls.Add(this.gbStatus);
             this.Controls.Add(this.txtArtPieceCurID);
             this.Controls.Add(this.lblArtPieceCurID);
@@ -276,7 +310,6 @@
             this.Controls.Add(this.lblArtPieceValue);
             this.Controls.Add(this.btnArtPieceView);
             this.Controls.Add(this.btnArtPieceAdd);
-            this.Controls.Add(this.rtbArtPieces);
             this.Controls.Add(this.txtArtPieceYear);
             this.Controls.Add(this.txtArtPieceTitle);
             this.Controls.Add(this.txtArtPieceID);
@@ -291,6 +324,7 @@
             this.Load += new System.EventHandler(this.FrmAddArtPieces_Load);
             this.gbStatus.ResumeLayout(false);
             this.gbStatus.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,7 +334,6 @@
 
         private System.Windows.Forms.Button btnArtPieceView;
         private System.Windows.Forms.Button btnArtPieceAdd;
-        private System.Windows.Forms.RichTextBox rtbArtPieces;
         private System.Windows.Forms.TextBox txtArtPieceYear;
         private System.Windows.Forms.TextBox txtArtPieceTitle;
         private System.Windows.Forms.TextBox txtArtPieceID;
@@ -316,5 +349,6 @@
         private System.Windows.Forms.GroupBox gbStatus;
         private System.Windows.Forms.RadioButton rbStorage;
         private System.Windows.Forms.RadioButton rbDisplay;
+        private System.Windows.Forms.DataGridView dataGridViewAP;
     }
 }

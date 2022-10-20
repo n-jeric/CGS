@@ -57,7 +57,6 @@ namespace CGS_WinForm
                     }
                 };
                 clearAll(Controls);
-                rtbSellArtPiece.AppendText("ArtPiece SOLD!");
             }
         }
         private void btnSellArtPieceView_Click(object sender, EventArgs e)
@@ -68,9 +67,19 @@ namespace CGS_WinForm
                 return;
             }
 
-            string msg = gallery.ListSalePieces(txtSellArtPieceID.Text.Trim());
-            rtbSellArtPiece.Clear();
-            rtbSellArtPiece.AppendText(msg);
+            DataTable dt = gallery.ArtPiecesForSaleDataTable(txtSellArtPieceID.Text.Trim());
+
+            if (dt != null && dt.Rows.Count>0)
+            {
+                dataGridViewSellAP.DataSource = dt;
+                dataGridViewSellAP.Columns["Value"].DefaultCellStyle.Format = "C2";
+                dataGridViewSellAP.Columns["Estimate"].DefaultCellStyle.Format = "C2";
+            }
+            else
+            {
+                MessageBox.Show("ArtPiece not available for sale");
+            }
+
         }
         private void btnSellArtPiece_Click(object sender, EventArgs e)
         {
@@ -81,6 +90,14 @@ namespace CGS_WinForm
                 Clear(msg);
 
             }
+        }
+
+        private void btnArtPiecesForSale_Click(object sender, EventArgs e)
+        {
+            DataTable table = gallery.ArtPiecesForSaleDataTable();
+            dataGridViewSellAP.DataSource = table;
+            dataGridViewSellAP.Columns["Value"].DefaultCellStyle.Format = "C2";
+            dataGridViewSellAP.Columns["Estimate"].DefaultCellStyle.Format = "C2";
         }
     }
 }

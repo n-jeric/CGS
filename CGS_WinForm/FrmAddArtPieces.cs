@@ -88,8 +88,10 @@ namespace CGS_WinForm
 
         private void btnArtPieceView_Click(object sender, EventArgs e)
         {
-            rtbArtPieces.Clear();
-            rtbArtPieces.AppendText(gallery.ListPieces());
+            DataTable table = gallery.ArtPieceDataTable();
+            dataGridViewAP.DataSource = table;
+            dataGridViewAP.Columns["Value"].DefaultCellStyle.Format = "C2";
+            dataGridViewAP.Columns["Estimate"].DefaultCellStyle.Format = "C2";
         }
     }
 }

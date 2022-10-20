@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -164,6 +166,81 @@ namespace CGS_WinLibrary
             return info;
         }
         #endregion
+
+        #region DataTable
+        public DataTable ToDataTable<T>(List<T> list)
+        {
+            DataTable dt = new DataTable(typeof(T).Name);
+            PropertyInfo[] props = typeof(T).GetProperties();
+
+            foreach(PropertyInfo property in props)
+            {
+                dt.Columns.Add(property.Name, property.PropertyType);
+            }
+            foreach(T item in list)
+            {
+                DataRow row = dt.NewRow();
+                foreach (var propInfo in props)
+                {
+                    row[propInfo.Name] = propInfo.GetValue(item, null) ?? DBNull.Value;
+                }
+                dt.Rows.Add(row);
+            }
+            return dt;
+        }
+        public DataTable CuratorDataTable()
+        {
+            List<Curator> list = myCurators.Cast<Curator>().ToList();
+
+            DataTable cDT = ToDataTable(list);
+            return cDT;
+        }
+        public DataTable ArtistDataTable()
+        {
+            List<Artist> list = myArtists.Cast<Artist>().ToList();
+
+            DataTable aDT = ToDataTable(list);
+            return aDT;
+        }
+        public DataTable ArtPieceDataTable()
+        {
+            List<ArtPiece> list = myArtPieces.Cast<ArtPiece>().ToList();
+
+            DataTable apDT = ToDataTable(list);
+            return apDT;
+        }
+        public DataTable ArtPiecesForSaleDataTable()
+        {
+            List<ArtPiece> list = new List<ArtPiece>();
+
+            foreach (ArtPiece piece in myArtPieces)
+            {
+                if (piece.Status != Status.S)
+                {
+                    list.Add(piece);
+                }
+            }
+            DataTable apsDT = ToDataTable(list);
+
+            return apsDT;
+        }
+        public DataTable ArtPiecesForSaleDataTable(string apID)
+        {
+            List<ArtPiece> list = new List<ArtPiece>();
+
+            foreach (ArtPiece piece in myArtPieces)
+            {
+                if (piece.GetID() == apID && piece.Status != Status.S)
+                {
+                    list.Add(piece);
+                }
+            }
+            DataTable apsDT = ToDataTable(list);
+
+            return apsDT;
+        }
+        #endregion
+
 
         #region Sell ArtPiece
         public (string cID, double cCom) CuratorCommision(string curID, double comBase)

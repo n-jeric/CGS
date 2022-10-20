@@ -72,8 +72,8 @@ namespace CGS_WinForm
 
         private void btnArtistView_Click(object sender, EventArgs e)
         {
-            rtbArtists.Clear();
-            rtbArtists.AppendText(gallery.ListArtists());
+            DataTable table = gallery.ArtistDataTable();
+            dataGridViewArtist.DataSource = table;
         }
 
         private void btnArtistSave_Click(object sender, EventArgs e)

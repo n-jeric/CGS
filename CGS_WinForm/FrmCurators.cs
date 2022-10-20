@@ -77,8 +77,9 @@ namespace CGS_WinForm
 
         private void btnCurView_Click(object sender, EventArgs e)
         {
-            rtbCurators.Clear();
-            rtbCurators.AppendText(gallery.ListCurators());
+            DataTable table = gallery.CuratorDataTable();
+            dataGridViewCur.DataSource = table;
+            dataGridViewCur.Columns["Commission"].DefaultCellStyle.Format = "C2";
         }
 
         private void btnCurSave_Click(object sender, EventArgs e)
@@ -86,8 +87,5 @@ namespace CGS_WinForm
             string msg = gallery.WriteCurator(MenuGallery.dirPath);
             MessageBox.Show(msg);
         }
-
-
-
     }
 }

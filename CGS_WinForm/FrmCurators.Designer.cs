@@ -28,16 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblCurFName = new System.Windows.Forms.Label();
             this.lblCurLName = new System.Windows.Forms.Label();
             this.lblCurID = new System.Windows.Forms.Label();
             this.txtCurFName = new System.Windows.Forms.TextBox();
             this.txtCurLName = new System.Windows.Forms.TextBox();
             this.txtCurID = new System.Windows.Forms.TextBox();
-            this.rtbCurators = new System.Windows.Forms.RichTextBox();
             this.btnCurAdd = new System.Windows.Forms.Button();
             this.btnCurSave = new System.Windows.Forms.Button();
             this.btnCurView = new System.Windows.Forms.Button();
+            this.dataGridViewCur = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCur)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCurFName
@@ -104,21 +108,6 @@
             this.txtCurID.Size = new System.Drawing.Size(155, 26);
             this.txtCurID.TabIndex = 2;
             // 
-            // rtbCurators
-            // 
-            this.rtbCurators.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
-            this.rtbCurators.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rtbCurators.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.rtbCurators.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbCurators.ForeColor = System.Drawing.Color.LightGray;
-            this.rtbCurators.Location = new System.Drawing.Point(0, 402);
-            this.rtbCurators.Name = "rtbCurators";
-            this.rtbCurators.ReadOnly = true;
-            this.rtbCurators.Size = new System.Drawing.Size(709, 194);
-            this.rtbCurators.TabIndex = 12;
-            this.rtbCurators.TabStop = false;
-            this.rtbCurators.Text = "";
-            // 
             // btnCurAdd
             // 
             this.btnCurAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
@@ -162,16 +151,60 @@
             this.btnCurView.UseVisualStyleBackColor = false;
             this.btnCurView.Click += new System.EventHandler(this.btnCurView_Click);
             // 
+            // dataGridViewCur
+            // 
+            this.dataGridViewCur.AllowUserToAddRows = false;
+            this.dataGridViewCur.AllowUserToDeleteRows = false;
+            this.dataGridViewCur.AllowUserToResizeRows = false;
+            this.dataGridViewCur.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewCur.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
+            this.dataGridViewCur.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewCur.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewCur.ColumnHeadersHeight = 30;
+            this.dataGridViewCur.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SlateGray;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewCur.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewCur.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridViewCur.EnableHeadersVisualStyles = false;
+            this.dataGridViewCur.Location = new System.Drawing.Point(0, 402);
+            this.dataGridViewCur.Name = "dataGridViewCur";
+            this.dataGridViewCur.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dataGridViewCur.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewCur.RowHeadersVisible = false;
+            this.dataGridViewCur.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewCur.Size = new System.Drawing.Size(709, 194);
+            this.dataGridViewCur.TabIndex = 13;
+            this.dataGridViewCur.TabStop = false;
+            // 
             // FrmCurators
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(709, 596);
+            this.Controls.Add(this.dataGridViewCur);
             this.Controls.Add(this.btnCurView);
             this.Controls.Add(this.btnCurSave);
             this.Controls.Add(this.btnCurAdd);
-            this.Controls.Add(this.rtbCurators);
             this.Controls.Add(this.txtCurID);
             this.Controls.Add(this.txtCurLName);
             this.Controls.Add(this.txtCurFName);
@@ -184,6 +217,7 @@
             this.Name = "FrmCurators";
             this.Text = "FrmCurators";
             this.Load += new System.EventHandler(this.FrmCurators_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCur)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,9 +231,9 @@
         private System.Windows.Forms.TextBox txtCurFName;
         private System.Windows.Forms.TextBox txtCurLName;
         private System.Windows.Forms.TextBox txtCurID;
-        private System.Windows.Forms.RichTextBox rtbCurators;
         private System.Windows.Forms.Button btnCurAdd;
         private System.Windows.Forms.Button btnCurSave;
         private System.Windows.Forms.Button btnCurView;
+        private System.Windows.Forms.DataGridView dataGridViewCur;
     }
 }
