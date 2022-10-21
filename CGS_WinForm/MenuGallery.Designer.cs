@@ -41,11 +41,14 @@
             this.pnlCenterLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.pbLogoSmall = new System.Windows.Forms.PictureBox();
             this.pnlSideBar.SuspendLayout();
             this.pnlSubArtPiece.SuspendLayout();
+            this.pnlLogo.SuspendLayout();
             this.pnlChilForm.SuspendLayout();
             this.pnlCenterLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoSmall)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSideBar
@@ -181,6 +184,7 @@
             // 
             // pnlLogo
             // 
+            this.pnlLogo.Controls.Add(this.pbLogoSmall);
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
             this.pnlLogo.Name = "pnlLogo";
@@ -229,6 +233,16 @@
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Computerized Gallery Systems";
             // 
+            // pbLogoSmall
+            // 
+            this.pbLogoSmall.Image = global::CGS_WinForm.Properties.Resources.CGSLogo;
+            this.pbLogoSmall.Location = new System.Drawing.Point(33, 15);
+            this.pbLogoSmall.Name = "pbLogoSmall";
+            this.pbLogoSmall.Size = new System.Drawing.Size(159, 70);
+            this.pbLogoSmall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogoSmall.TabIndex = 0;
+            this.pbLogoSmall.TabStop = false;
+            // 
             // MenuGallery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -241,14 +255,16 @@
             this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "MenuGallery";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MenuGallery";
+            this.Text = "Computerized Gallery Systems";
             this.Load += new System.EventHandler(this.MenuGallery_Load);
             this.pnlSideBar.ResumeLayout(false);
             this.pnlSubArtPiece.ResumeLayout(false);
+            this.pnlLogo.ResumeLayout(false);
             this.pnlChilForm.ResumeLayout(false);
             this.pnlCenterLogo.ResumeLayout(false);
             this.pnlCenterLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoSmall)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -268,5 +284,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel pnlCenterLogo;
+        private System.Windows.Forms.PictureBox pbLogoSmall;
     }
 }
